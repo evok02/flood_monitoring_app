@@ -57,7 +57,7 @@ ROOT_URLCONF = "floodapp.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -79,10 +79,10 @@ WSGI_APPLICATION = "floodapp.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_USER_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
+        'NAME': 'postgres',
+        'USER': 'postgres12',
+        'PASSWORD': 'glebka4733',
+        'HOST': 'flood-app-db.c5um80qe4vl2.eu-north-1.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -123,6 +123,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "floodapp/static",
+]
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
