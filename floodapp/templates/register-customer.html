@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <div class="center">
+        <h1>Register</h1>
+        <form method="POST" action="{% url 'register-customer' %}">
+            {% csrf_token %}
+            <!-- <div class="txt_field">
+                <input type="text" required name="first_name">
+                <span></span>
+                <label>First Name</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="text" required name="last_name">
+                <span></span>
+                <label>Last Name</label>
+            </div> -->
+
+            <div class="txt_field">
+                <input type="email" required name="email">
+                <span></span>
+                <label>Email</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required name="password1">
+                <span></span>
+                <label>Password</label>
+            </div> 
+            <div class="txt_field">
+                <input type="password" required name="password2">
+                <span></span>
+                <label>Confirm Password</label>
+            </div>     
+
+            <input type="submit" value="Register">
+            <div class="signup_link">
+                Already have an account? <a href="{% url 'login' %}">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
