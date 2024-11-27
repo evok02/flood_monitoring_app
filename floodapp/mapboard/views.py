@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import WaterLevel
+from .decorators import allowed_users, unauthenticated_user
 
 def water_levels_api(request):
     levels = WaterLevel.objects.select_related('region').all()
@@ -16,5 +17,8 @@ def water_levels_api(request):
     ]
     return render(request, 'mapboard.html')
 
+
+@allowed_users(allowed_roles=['admin'])
 def admin_only_page(request):
     return render(request, 'admin_only_page.html')
+
