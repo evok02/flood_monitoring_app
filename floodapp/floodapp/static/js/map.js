@@ -51,26 +51,34 @@ fetch(austriaGeoJsonUrl)
         }).addTo(map);
     });
 
+// Regions and Markers
 const regions = {
     vienna: { lat: 48.2082, lon: 16.3738, water_level: 2.3, risk: 'low' },
     graz: { lat: 47.0707, lon: 15.4395, water_level: 3.8, risk: 'medium' },
     salzburg: { lat: 47.8095, lon: 13.055, water_level: 5.2, risk: 'high' }
 };
 
-Object.keys(regions).forEach(regionKey => {
+Object.keys(regions).forEach((regionKey, index) => {
     const region = regions[regionKey];
     const color = region.risk === 'high' ? 'red' : region.risk === 'medium' ? 'orange' : 'green';
 
-    L.circleMarker([region.lat, region.lon], {
+    const marker = L.circleMarker([region.lat, region.lon], {
         radius: 8,
         fillColor: color,
         color: '#000',
         weight: 1,
         fillOpacity: 0.8
-    }).addTo(map)
-      .bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
+    }).addTo(map);
+
+    marker.bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
+
+    // Add click listener to fetch historical data
+    marker.on('click', () => {
+        fetchWaterLevelHistory(index + 1); // We assume region ID is index + 1???
+    });
 });
 
+// Dropdown Filter
 document.getElementById('region-filter').addEventListener('change', function (e) {
     const selectedRegion = e.target.value;
     map.setView(
@@ -78,3 +86,36 @@ document.getElementById('region-filter').addEventListener('change', function (e)
         selectedRegion === 'all' ? 7 : 12
     );
 });
+
+// Display water level history
+// URL to the backend history API
+function getHistoryAPI(regionId) {
+    return `/map/history/${regionId}/`;
+}
+
+// Fetch and display historical data for a region
+function fetchWaterLevelHistory(regionId) {
+    fetch(getHistoryAPI(regionId))
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Format historical data
+                const history = data.data.map(entry => `
+                    <div>
+                        <p><strong>Water Level:</strong> ${entry.water_level} m</p>
+                        <p><strong>Risk Level:</strong> ${entry.risk_level}</p>
+                        <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
+                    </div>
+                    <hr/>
+                `).join('');
+
+                alert(`Historical Data:\n\n${history}`);
+            } else {
+                alert(`Error getting data: ${data.error}`);
+            }
+        })
+        .catch(error => {
+            console.error("Error getting historical data:", error);
+            alert("An error occurred while fetching data.");
+        });
+}
