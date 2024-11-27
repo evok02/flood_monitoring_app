@@ -13,3 +13,6 @@ def mapboard_view(request):
     return render(request, 'mapboard.html', {'stations_data': json.dumps(data)})
 
 
+
+def admin_only_page(request):
+    return render(request, 'admin_only_page.html')
