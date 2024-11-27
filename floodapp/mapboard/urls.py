@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.water_levels_api, name='map'),
+    path('', views.mapboard_view, name='map'),
 ]

@@ -17,6 +17,15 @@ class WaterLevel(models.Model):
         choices=[('low', 'Low'), ('medium', 'Medium'), ('high', 'High')]
     )                                                             # Risk level: low, medium, high
     timestamp = models.DateTimeField(auto_now_add=True)           # When the data was recorded
+    location_lat = models.FloatField(default=0.0)
+    location_lon = models.FloatField(default=0.0)
+
+class Station(models.Model):
+    x = models.DecimalField(max_digits=10, decimal_places=2)
+    y = models.DecimalField(max_digits=10, decimal_places=2)
+    dbmsnr = models.IntegerField()
+    hzbnr01 = models.IntegerField(primary_key=True)
+    typ = models.CharField(max_length=255)
 
     def __str__(self):
-        return f"{self.region.name} - {self.water_level}m - {self.risk_level}"
+        return f"Station {self.hzbnr01}"
