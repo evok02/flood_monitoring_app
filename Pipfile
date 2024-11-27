@@ -8,6 +8,9 @@ django = "*"
 psycopg2 = "==2.9.5"
 python-dotenv = "*"
 django-widget-tweaks = "*"
+celery = "*"
+redis = "*"
+requests = "*"
 
 [dev-packages]
 
