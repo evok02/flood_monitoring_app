@@ -15,3 +15,6 @@ def water_levels_api(request):
         for wl in levels
     ]
     return render(request, 'mapboard.html')
+
+def admin_only_page(request):
+    return render(request, 'admin_only_page.html')
