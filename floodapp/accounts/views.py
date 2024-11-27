@@ -36,7 +36,7 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None and user.is_active:
             login(request, user)
-            return redirect('mapboard')
+            return redirect('map')
         else:
             messages.warning(request, 'Something went wrong. Please check form errors')
             return redirect('login')
