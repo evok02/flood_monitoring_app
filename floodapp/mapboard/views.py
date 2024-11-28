@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import WaterLevel, Station, Region, EmergencyReport
+from .decorators import allowed_users, unauthenticated_user
 import json
-
 
 def water_levels_api(request):
     levels = WaterLevel.objects.select_related('region').all()
@@ -28,8 +28,12 @@ def mapboard_view(request):
 
 
 
+
+@allowed_users(allowed_roles=['admin'])
 def admin_only_page(request):
     return render(request, 'admin_only_page.html')
+
+
 
 def water_level_history(request, region_id):
     try:
