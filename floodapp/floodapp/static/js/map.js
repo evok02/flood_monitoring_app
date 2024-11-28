@@ -176,3 +176,24 @@ function fetchWaterLevelHistory(regionId) {
             alert("An error occurred while fetching data.");
         });
 }
+
+const standingWaterWfsUrl = 'https://haleconnect.com/ows/services/org.709.39dea908-344d-459e-b79b-838fd5a5c03c_wfs';
+
+const standingWaterGeoJsonUrl = `${standingWaterWfsUrl}?service=WFS&version=2.0.0&request=GetFeature&typeName=hy-p:StandingWater&outputFormat=application/json`;
+
+// Add StandingWater layer
+fetch(standingWaterGeoJsonUrl)
+    .then(response => response.json())
+    .then(data => {
+        L.geoJSON(data, {
+            style: {
+                color: 'blue',
+                weight: 2,
+                fillColor: 'rgba(0, 0, 255, 0.5)',
+                fillOpacity: 1
+            }
+        }).addTo(map);
+    })
+
+
+
