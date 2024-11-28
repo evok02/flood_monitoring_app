@@ -6,12 +6,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Use a standard tile layer for Austria
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
 // Load GeoJSON data for Austria
 fetch(austriaGeoJsonUrl)
     .then(response => response.json())
@@ -56,86 +50,27 @@ fetch(austriaGeoJsonUrl)
             }
         }).addTo(map);
     });
-// Function to show stations on the map
-function showStations(stationsData) {
-    console.log('Show Stations function called'); // Debugging: Check if function is called
-    console.log(stationsData); // Debugging: Check if data is available
-    stationsData.forEach(station => {
-        const marker = L.circleMarker([station.y, station.x], {
-            radius: 8,
-            fillColor: 'blue',
-            color: '#000',
-            weight: 1,
-            fillOpacity: 0.8
-        }).addTo(map);
 
-        marker.bindPopup(`<b>Station ID: ${station.hzbnr01}</b>`);
-
-        marker.on('mouseover', function (e) {
-            this.openPopup();
-        });
-
-        marker.on('mouseout', function (e) {
-            this.closePopup();
-        });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const stationsDataElement = document.getElementById('stations-data');
-    if (!stationsDataElement) {
-        console.error('stations-data element not found in DOM');
-        return;
-    }
-
-    let stationsData;
-    try {
-        stationsData = JSON.parse(stationsDataElement.textContent);
-        console.log('Stations Data:', stationsData); // Debugging: Ensure data is valid
-    } catch (error) {
-        console.error('Failed to parse stations data:', error.message);
-        return;
-    }
-
-    // Attach button event listener
-    const showStationsButton = document.getElementById('show-stations');
-    if (!showStationsButton) {
-        console.error('show-stations button not found in DOM');
-        return;
-    }
-    showStationsButton.addEventListener('click', () => {
-        console.log('Show Stations button clicked');
-        showStations(stationsData); // Call the function with the data
-    });
-});
-// Regions and Markers
 const regions = {
     vienna: { lat: 48.2082, lon: 16.3738, water_level: 2.3, risk: 'low' },
     graz: { lat: 47.0707, lon: 15.4395, water_level: 3.8, risk: 'medium' },
     salzburg: { lat: 47.8095, lon: 13.055, water_level: 5.2, risk: 'high' }
 };
 
-Object.keys(regions).forEach((regionKey, index) => {
+Object.keys(regions).forEach(regionKey => {
     const region = regions[regionKey];
     const color = region.risk === 'high' ? 'red' : region.risk === 'medium' ? 'orange' : 'green';
 
-    const marker = L.circleMarker([region.lat, region.lon], {
+    L.circleMarker([region.lat, region.lon], {
         radius: 8,
         fillColor: color,
         color: '#000',
         weight: 1,
         fillOpacity: 0.8
-    }).addTo(map);
-
-    marker.bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
-
-    // Add click listener to fetch historical data
-    marker.on('click', () => {
-        fetchWaterLevelHistory(index + 1); // We assume region ID is index + 1???
-    });
+    }).addTo(map)
+      .bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
 });
 
-// Dropdown Filter
 document.getElementById('region-filter').addEventListener('change', function (e) {
     const selectedRegion = e.target.value;
     map.setView(
@@ -143,39 +78,6 @@ document.getElementById('region-filter').addEventListener('change', function (e)
         selectedRegion === 'all' ? 7 : 12
     );
 });
-
-// Display water level history
-// URL to the backend history API
-function getHistoryAPI(regionId) {
-    return `/map/history/${regionId}/`;
-}
-
-// Fetch and display historical data for a region
-function fetchWaterLevelHistory(regionId) {
-    fetch(getHistoryAPI(regionId))
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Format historical data
-                const history = data.data.map(entry => `
-                    <div>
-                        <p><strong>Water Level:</strong> ${entry.water_level} m</p>
-                        <p><strong>Risk Level:</strong> ${entry.risk_level}</p>
-                        <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
-                    </div>
-                    <hr/>
-                `).join('');
-
-                alert(`Historical Data:\n\n${history}`);
-            } else {
-                alert(`Error getting data: ${data.error}`);
-            }
-        })
-        .catch(error => {
-            console.error("Error getting historical data:", error);
-            alert("An error occurred while fetching data.");
-        });
-}
 
 const standingWaterWfsUrl = 'https://haleconnect.com/ows/services/org.709.39dea908-344d-459e-b79b-838fd5a5c03c_wfs';
 
@@ -194,6 +96,5 @@ fetch(standingWaterGeoJsonUrl)
             }
         }).addTo(map);
     })
-
 
 
