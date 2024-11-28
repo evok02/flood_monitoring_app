@@ -29,3 +29,22 @@ class Station(models.Model):
 
     def __str__(self):
         return f"Station {self.hzbnr01}"
+
+
+class EmergencyReport(models.Model):
+    # Link to a region
+    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    # Description of the emergency
+    description = models.TextField()
+    # Specific location
+    location = models.CharField(max_length=255, blank=True, null=True)
+    # Level of urgency
+    urgency_level = models.CharField(
+        max_length=50,
+        choices=[('low', 'Low'), ('medium', 'Medium'), ('high', 'High')]
+    )
+    # When the report was submitted
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Report in {self.region.name} - {self.urgency_level}"

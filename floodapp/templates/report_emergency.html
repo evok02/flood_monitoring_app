@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Emergency</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/report.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Report an Emergency</h1>
+        <form method="POST" action="{% url 'report-emergency' %}" onsubmit="return showThankYouMessage()">
+            {% csrf_token %}
+            <label for="region">Region:</label>
+            <select name="region" id="region" required>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="description">Incident Description:</label>
+            <textarea name="description" id="description" rows="4" required></textarea>
+
+            <label for="location">Location of the Incident:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location" required />
+
+            <label for="urgency_level">Urgency Level:</label>
+            <select name="urgency_level" id="urgency_level" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+    <script src="{% static 'js/report.js' %}"></script>
+    <script>
+        function showThankYouMessage() {
+            alert("Form successfully submitted. Thank you.");
+            return true; // Allow the form to be submitted
+        }
+    </script>
+</body>
+</html>
