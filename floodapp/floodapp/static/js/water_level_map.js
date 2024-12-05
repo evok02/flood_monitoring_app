@@ -62,6 +62,24 @@ fetch('https://gis.lfrz.gv.at/wmsgw/?key=a64a0c9c9a692ed7041482cb6f03a40a&servic
     })
     .catch(error => console.error('Error fetching GeoJSON:', error));
 
+
+// Fetch and display rivers
+fetch(waterLevelGeoJsonUrl)
+    .then(response => response.json())
+    .then(data => {
+        console.log('Rivers GeoJSON Data:', data); // Debug log
+
+        L.geoJSON(data, {
+            style: {
+                color: 'blue',  // Border color
+                weight: 0.5,      // Border width
+                fillColor: 'blue', // Fill color for rivers
+                fillOpacity: 0.5
+            }
+        }).addTo(map);
+    })
+    .catch(error => console.error('Error fetching rivers GeoJSON:', error));
+
 // Load GeoJSON data for Austria
 fetch(austriaGeoJsonUrl)
     .then(response => response.json())
@@ -107,4 +125,7 @@ fetch(austriaGeoJsonUrl)
         }).addTo(map);
     })
     .catch(error => console.error('Error fetching GeoJSON:', error));
+
+
+
 
