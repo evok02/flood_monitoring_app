@@ -1,3 +1,4 @@
+// Fetch and display measurement stations
 const map = L.map('map').setView([47.5162, 14.5501], 8); // Austria map center
 
 // Use a standard tile layer for Austria
@@ -5,7 +6,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
 
 // Fetch and display measurement stations
 fetch('https://gis.lfrz.gv.at/wmsgw/?key=a64a0c9c9a692ed7041482cb6f03a40a&service=WFS&version=2.0.0&request=GetFeature&typeName=inspire:pegelaktuell&outputFormat=application/json')
@@ -23,11 +23,12 @@ fetch('https://gis.lfrz.gv.at/wmsgw/?key=a64a0c9c9a692ed7041482cb6f03a40a&servic
                     <strong>River:</strong> ${properties.gewaesser || 'N/A'}<br>
                     <strong>Flow:</strong> ${properties.wert || 'N/A'} ${properties.einheit || ''}<br>
                     <strong>Time:</strong> ${properties.zeitpunkt || 'N/A'}<br>
+                    <a href="/map/historical-data/?hzbnr=${properties.hzbnr}" target="_blank">Get historical data</a>
                     <a href="${properties.internet}" target="_blank">More Info</a>
                 `;
                 layer.bindPopup(popupContent);
             },
-            pointToLayer: (feature) => {
+            pointToLayer: (feature, latlng) => {
                 const riskColor = !isNaN(parseFloat(feature.properties.wert)) && parseFloat(feature.properties.wert) > 10 ? 'red' : 'blue';
                 const properties = feature.properties;
                 console.log('Lat:', properties.lat, 'Lon:', properties.lon); // Debug log
@@ -55,7 +56,7 @@ fetch('https://gis.lfrz.gv.at/wmsgw/?key=a64a0c9c9a692ed7041482cb6f03a40a&servic
                     fillColor: riskColor,
                     color: '#000',
                     weight: 1,
-                    fillOpacity: 1
+                    fillOpacity: 0.8
                 }).bringToFront();
             }
         }).addTo(map);
