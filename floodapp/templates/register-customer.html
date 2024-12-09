@@ -11,40 +11,70 @@
         <h1>Register</h1>
         <form method="POST" action="{% url 'register-customer' %}">
             {% csrf_token %}
-            <!-- <div class="txt_field">
-                <input type="text" required name="first_name">
-                <span></span>
-                <label>First Name</label>
-            </div>
+            
+            <!-- Display non-field-specific errors -->
+            {% if form.non_field_errors %}
+                <div class="error-list">
+                    <ul>
+                        {% for error in form.non_field_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
 
+            <!-- Email field with error handling -->
             <div class="txt_field">
-                <input type="text" required name="last_name">
-                <span></span>
-                <label>Last Name</label>
-            </div> -->
-
-            <div class="txt_field">
-                <input type="email" required name="email">
-                <span></span>
+                {{ form.email }}
+                {% if form.email.errors %}
+                    <ul class="error-list">
+                        {% for error in form.email.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <label>Email</label>
             </div>
 
+            <!-- Password1 field with error handling -->
             <div class="txt_field">
-                <input type="password" required name="password1">
-                <span></span>
+                {{ form.password1 }}
+                {% if form.password1.errors %}
+                    <ul class="error-list">
+                        {% for error in form.password1.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <label>Password</label>
             </div> 
+
+            <!-- Password2 field with error handling -->
             <div class="txt_field">
-                <input type="password" required name="password2">
-                <span></span>
+                {{ form.password2 }}
+                
                 <label>Confirm Password</label>
             </div>     
-
+            {% if form.password2.errors %}
+                    <ul class="error-list">
+                        {% for error in form.password2.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             <input type="submit" value="Register">
             <div class="signup_link">
                 Already have an account? <a href="{% url 'login' %}">Login</a>
             </div>
         </form>
     </div>
+
+    <style>
+      .error-list {
+        color: red;
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+    </style>
 </body>
 </html>
