@@ -39,3 +39,44 @@ body {
     flex-grow: 1;
     height: 100%;
 }
+.navbar {
+    background: linear-gradient(90deg, purple, nightblue);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-buttons button {
+    background-color: #6a0dad;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar .nav-buttons button:hover {
+    background-color: #4b0082;
+}
+
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

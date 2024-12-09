@@ -18,16 +18,8 @@ def water_levels_api(request):
     ]
     return render(request, 'mapboard.html')
 
-def mapboard_view(request):
-    stations = Station.objects.all()
-    data = [
-        {"x": float(station.x), "y": float(station.y), "hzbnr01": station.hzbnr01}
-        for station in stations
-    ]
-    return render(request, 'mapboard.html', {'stations_data': json.dumps(data)})
-
-
-
+def waterlevel_map(request):
+    return render(request, "waterlevel_map.html")
 
 @allowed_users(allowed_roles=['admin'])
 def admin_only_page(request):
