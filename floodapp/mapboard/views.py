@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
-from .models import WaterLevel, Station, Region, EmergencyReport
+from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
 
@@ -49,3 +49,20 @@ def water_level_history(request, region_id):
 def report_emergency_view(request):
     regions = Region.objects.all()
     return render(request, 'report_emergency.html', {'regions': regions})
+
+def historical_data_view(request):
+    station_id = request.GET.get('hzbnr')
+    if not station_id:
+        return render(request, 'error.html', {'message': 'Station ID is required.'})
+
+    # Fetch station metadata
+    station = get_object_or_404(Station, hzbnr=station_id)
+
+    # Fetch measurements
+    measurements = Measurement.objects.filter(station_id=station.id).order_by('timestamp')
+
+    context = {
+        'station': station,
+        'measurements': measurements,
+    }
+    return render(request, 'historical_data.html', context)
