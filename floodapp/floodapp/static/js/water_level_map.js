@@ -73,7 +73,7 @@ fetch(waterLevelGeoJsonUrl)
         L.geoJSON(data, {
             style: {
                 color: 'blue',  // Border color
-                weight: 0.5,      // Border width
+                weight: 0.1,      // Border width
                 fillColor: 'blue', // Fill color for rivers
                 fillOpacity: 0.5
             }

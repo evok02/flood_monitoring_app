@@ -26,6 +26,13 @@
                 <option value="vienna">Vienna</option>
                 <option value="graz">Graz</option>
             </select>
+            
+            <!-- Dropdown for redirecting to map or water level map -->
+            <label for="map-options">Choose a map:</label>
+            <select id="map-options" onchange="redirectToMap()">
+                <option value="map" {% if request.path == '/map/' %}selected{% endif %}>View Map</option>
+                <option value="waterlevel-map" {% if request.path == '/map/water-map/' %}selected{% endif %}>Water Level Map</option>
+            </select>
         </div>
 
         <!-- Map -->
@@ -35,6 +42,17 @@
         </script>
         <script src="{% static 'js/map.js' %}"></script>
     </div>
+
+    <script>
+        function redirectToMap() {
+            const mapSelection = document.getElementById("map-options").value;
+            if (mapSelection === "map") {
+                window.location.href = "{% url 'map' %}";  // Redirect to map page
+            } else if (mapSelection === "waterlevel-map") {
+                window.location.href = "{% url 'waterlevel-map' %}";  // Redirect to water level map
+            }
+        }
+    </script>
 
 {% endblock pageContent %}
 </body>

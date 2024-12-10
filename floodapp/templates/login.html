@@ -13,9 +13,9 @@
 <div class="login-page-container">
   <div class="center">
     <h1>Login</h1>
-    <form method="POST">
+    <form method="POST" autocomplete="off">
       {% csrf_token %}
-      <div class="txt_field">
+      <div class="txt_field" >
         <input type="text" name="username" required>
         <span></span>
         <label>Username</label>
@@ -33,6 +33,7 @@
     </form>
   </div>
 </div>
+
 {% endblock pageContent %}
 
 

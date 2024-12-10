@@ -127,12 +127,10 @@
                 QUICK LINKS
               </h4>
               <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="" href="service.html">Services</a>
-                <a class="" href="about.html"> About</a>
-                <a class="" href="project.html">Project</a>
-                <a class="" href="testimonial.html">Testimonial</a>
-                <a class="" href="contact.html">Contact Us</a>
+                <a class="" href="{% url 'home' %}l">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="{% url 'about' %}"> About</a>
+                <a class="" href="{% url 'map' %}"> View Map</a>
+                <a class="" href="{% url 'waterlevel-map' %}"> View Water Level Map</a>
               </div>
             </div>
           </div>
