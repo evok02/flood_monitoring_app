@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headerContent %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report an Emergency</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/report.css' %}">
-</head>
-<body>
+{% endblock headerContent %}
+
+
+
+
+{% block pageContent %}
     <div class="container">
         <h1>Report an Emergency</h1>
         <form method="POST" action="{% url 'report-emergency' %}" onsubmit="return showThankYouMessage()">
@@ -40,5 +45,6 @@
             return true; // Allow the form to be submitted
         }
     </script>
-</body>
-</html>
+{% endblock pageContent %}
+
+

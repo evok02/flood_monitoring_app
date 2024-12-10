@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #e8e8e8;
   overflow-x: hidden;
 }
 
@@ -250,6 +250,7 @@ a:focus {
 
 .navbar-brand img {
   width: 125px;
+  
 }
 
 .custom_nav-container {
@@ -1372,8 +1373,17 @@ input[type="submit"]:hover{
   transform: translateY(-100%);
 }
 
-.active {
-  background-color: black;
-  color: white;
-  font-weight: bold;
+
+
+/* Add custom styles for the active Write Report button */
+
+.quote_btn-container .quote_btn_active {
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: none;
 }
