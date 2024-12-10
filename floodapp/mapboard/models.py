@@ -21,15 +21,45 @@ class WaterLevel(models.Model):
     location_lon = models.FloatField(default=0.0)
 
 class Station(models.Model):
-    x = models.DecimalField(max_digits=10, decimal_places=2)
-    y = models.DecimalField(max_digits=10, decimal_places=2)
-    dbmsnr = models.IntegerField()
-    hzbnr01 = models.IntegerField(primary_key=True)
-    typ = models.CharField(max_length=255)
+    hzbnr = models.IntegerField(null=True, blank=True, verbose_name="HZB Number")
+    messstelle = models.CharField(max_length=255, null=True, blank=True, verbose_name="Measurement Point")
+    dbmsnr = models.IntegerField(null=True, blank=True, verbose_name="DBMS Number")
+    gewaesser = models.CharField(max_length=255, null=True, blank=True, verbose_name="Water Body")
+    sachgebiet = models.CharField(max_length=255, null=True, blank=True, verbose_name="Field of Expertise")
+    dienststelle = models.CharField(max_length=255, null=True, blank=True, verbose_name="Service Office")
+    messstellenbetreiber = models.CharField(max_length=255, null=True, blank=True, verbose_name="Operator")
+    orogr_einzugsgebiet = models.FloatField(null=True, blank=True, verbose_name="Catchment Area (km²)")
+    exportzeitreihe = models.CharField(max_length=255, null=True, blank=True, verbose_name="Export Time Series")
+    einheit = models.CharField(max_length=50, null=True, blank=True, verbose_name="Unit")
+    exportzeitraum = models.CharField(max_length=255, null=True, blank=True, verbose_name="Export Period")
+    prognose = models.BooleanField(default=False, verbose_name="Forecast")
+    class Meta:
+        db_table = "stations"
+        verbose_name = "Station"
+        verbose_name_plural = "Stations"
 
     def __str__(self):
-        return f"Station {self.hzbnr01}"
+        return self.messstelle or f"Station {self.hzbnr}"
 
+
+class Measurement(models.Model):
+    station = models.ForeignKey(
+        'Station', 
+        on_delete=models.CASCADE, 
+        related_name='measurements',
+        db_column='station_id'
+    )
+    timestamp = models.DateTimeField()
+    wert = models.DecimalField(max_digits=10, decimal_places=3, null=True, blank=True)
+    einheit = models.CharField(max_length=50, null=True, blank=True)
+
+    class Meta:
+        db_table = 'measurements'  # This links the model to the actual DB table
+        verbose_name = 'Measurement'
+        verbose_name_plural = 'Measurements'
+
+    def __str__(self):
+        return f"Measurement {self.id} - Station {self.station_id}"
 
 class EmergencyReport(models.Model):
     # Link to a region

@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 from django.shortcuts import render, redirect
+=======
+from django.shortcuts import render, get_object_or_404
+>>>>>>> origin
 from django.http import JsonResponse
-from .models import WaterLevel, Station, Region, EmergencyReport
+from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
 from .models import Event
@@ -21,16 +25,8 @@ def water_levels_api(request):
     ]
     return render(request, 'mapboard.html')
 
-def mapboard_view(request):
-    stations = Station.objects.all()
-    data = [
-        {"x": float(station.x), "y": float(station.y), "hzbnr01": station.hzbnr01}
-        for station in stations
-    ]
-    return render(request, 'mapboard.html', {'stations_data': json.dumps(data)})
-
-
-
+def waterlevel_map(request):
+    return render(request, "waterlevel_map.html")
 
 @allowed_users(allowed_roles=['admin'])
 def admin_only_page(request):
@@ -61,6 +57,7 @@ def report_emergency_view(request):
     regions = Region.objects.all()
     return render(request, 'report_emergency.html', {'regions': regions})
 
+<<<<<<< HEAD
 
 #@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
@@ -141,3 +138,21 @@ def update_event(request):
         update_form = None
 
     return render(request, 'update_event.html', {'select_form': select_form, 'update_form': update_form})
+=======
+def historical_data_view(request):
+    station_id = request.GET.get('hzbnr')
+    if not station_id:
+        return render(request, 'error.html', {'message': 'Station ID is required.'})
+
+    # Fetch station metadata
+    station = get_object_or_404(Station, hzbnr=station_id)
+
+    # Fetch measurements
+    measurements = Measurement.objects.filter(station_id=station.id).order_by('timestamp')
+
+    context = {
+        'station': station,
+        'measurements': measurements,
+    }
+    return render(request, 'historical_data.html', context)
+>>>>>>> origin
