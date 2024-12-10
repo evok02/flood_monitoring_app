@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flood Monitoring System</title>
-    {% load static %}
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block headerContent %}
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+    <!-- Map CSS -->
     <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <!-- Turf.js -->
     <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
-</head>
-<body>
+{% endblock headerContent %}
+
+{% block pageContent %}
     <div class="main-container">
         <!-- Sidebar -->
         <div class="sidebar">
@@ -24,11 +26,13 @@
                 <option value="vienna">Vienna</option>
                 <option value="graz">Graz</option>
             </select>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="{% url 'logout' %}">Logout</a>
-                </li>
-            </ul>
+            
+            <!-- Dropdown for redirecting to map or water level map -->
+            <label for="map-options">Choose a map:</label>
+            <select id="map-options" onchange="redirectToMap()">
+                <option value="map" {% if request.path == '/map/' %}selected{% endif %}>View Map</option>
+                <option value="waterlevel-map" {% if request.path == '/map/water-map/' %}selected{% endif %}>Water Level Map</option>
+            </select>
         </div>
 
         <!-- Map -->
@@ -38,5 +42,18 @@
         </script>
         <script src="{% static 'js/map.js' %}"></script>
     </div>
+
+    <script>
+        function redirectToMap() {
+            const mapSelection = document.getElementById("map-options").value;
+            if (mapSelection === "map") {
+                window.location.href = "{% url 'map' %}";  // Redirect to map page
+            } else if (mapSelection === "waterlevel-map") {
+                window.location.href = "{% url 'waterlevel-map' %}";  // Redirect to water level map
+            }
+        }
+    </script>
+
+{% endblock pageContent %}
 </body>
 </html>

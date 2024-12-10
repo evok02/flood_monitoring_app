@@ -29,7 +29,7 @@ fetch('https://gis.lfrz.gv.at/wmsgw/?key=a64a0c9c9a692ed7041482cb6f03a40a&servic
                 layer.bindPopup(popupContent);
             },
             pointToLayer: (feature, latlng) => {
-                const riskColor = !isNaN(parseFloat(feature.properties.wert)) && parseFloat(feature.properties.wert) > 10 ? 'red' : 'blue';
+                const riskColor = !isNaN(parseFloat(feature.properties.wert)) && parseFloat(feature.properties.wert) > 50 ? 'red' : 'blue';
                 const properties = feature.properties;
                 console.log('Lat:', properties.lat, 'Lon:', properties.lon); // Debug log
 
@@ -73,7 +73,7 @@ fetch(waterLevelGeoJsonUrl)
         L.geoJSON(data, {
             style: {
                 color: 'blue',  // Border color
-                weight: 0.5,      // Border width
+                weight: 0.1,      // Border width
                 fillColor: 'blue', // Fill color for rivers
                 fillOpacity: 0.5
             }

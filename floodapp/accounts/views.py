@@ -20,13 +20,16 @@ def register_customer(request):
             messages.success(request, 'Account created. Please log in')
             return redirect('login')
         else:
+            print("Form errors:", form.errors)
+            print("first else statement")
             messages.warning(request, 'Something went wrong. Please check form errors')
-            return redirect('register-customer')
+
+            return render(request, 'register-customer.html', {'form': form})
     else:
-        print('GET request detected')  # Debugging
+        print('second else statement')  # Debugging
         form = RegisteredCustomerForm()
-        context = {'form': form}
-        return render(request, 'register-customer.html', context)
+        context = {'fo  rm': form}
+        return render(request, 'register-customer.html', {'form': form})
 
 
 def login_user(request):

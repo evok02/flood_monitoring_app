@@ -1,4 +1,4 @@
-const map = L.map('map').setView([47.5162, 14.5501], 7); // Austria map center
+const map = L.map('map').setView([47.5162, 14.5501], 8); // Austria map center
 
 // Use a standard tile layer for Austria
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

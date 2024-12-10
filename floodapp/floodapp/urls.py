@@ -19,7 +19,9 @@ from django.urls import path, include
 
 
 urlpatterns = [
+    
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
-    path("map/", include("mapboard.urls"))
+    path("map/", include("mapboard.urls")),
+    path("", include("index.urls"))
 ]
