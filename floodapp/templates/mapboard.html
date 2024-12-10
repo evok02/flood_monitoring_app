@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flood Monitoring System</title>
-    {% load static %}
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block headerContent %}
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+    <!-- Map CSS -->
     <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <!-- Turf.js -->
     <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
-</head>
-<body>
+{% endblock headerContent %}
+
+{% block pageContent %}
     <div class="main-container">
         <!-- Sidebar -->
         <div class="sidebar">
@@ -24,11 +26,6 @@
                 <option value="vienna">Vienna</option>
                 <option value="graz">Graz</option>
             </select>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="{% url 'logout' %}">Logout</a>
-                </li>
-            </ul>
         </div>
 
         <!-- Map -->
@@ -38,5 +35,7 @@
         </script>
         <script src="{% static 'js/map.js' %}"></script>
     </div>
+
+{% endblock pageContent %}
 </body>
 </html>
