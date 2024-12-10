@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historical Data</title>
+</head>
+<body>
+    <h1>Historical Data for {{ station.messstelle }}</h1>
+    <h3>Metadata</h3>
+    <ul>
+        <li><strong>River:</strong> {{ station.gewaesser }}</li>
+        <li><strong>Orography:</strong> {{ station.orogr_einzugsgebiet }} km²</li>
+        <li><strong>Operator:</strong> {{ station.messstellenbetreiber }}</li>
+        <!-- Add other metadata fields as needed -->
+    </ul>
+
+    <h3>Measurements</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Value</th>
+                <th>Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for measurement in measurements %}
+            <tr>
+                <td>{{ measurement.timestamp }}</td>
+                <td>{{ measurement.wert }}</td>
+                <td>{{ measurement.einheit }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
