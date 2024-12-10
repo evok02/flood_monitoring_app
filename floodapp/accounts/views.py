@@ -48,4 +48,4 @@ def logout_user(request):
     messages.success(request, 'Active session ended. Log in to continue')
     return redirect('login')
 
-
+    
