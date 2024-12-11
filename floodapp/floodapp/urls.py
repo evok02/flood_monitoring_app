@@ -25,3 +25,4 @@ urlpatterns = [
     path("map/", include("mapboard.urls")),
     path("", include("index.urls"))
 ]
+
