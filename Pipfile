@@ -10,6 +10,7 @@ django-widget-tweaks = "*"
 celery = "*"
 redis = "*"
 requests = "*"
+pytest = "*"
 
 [dev-packages]
 
