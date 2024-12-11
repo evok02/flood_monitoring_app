@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import WaterLevel, EmergencyReport, Region
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 def water_levels_api(request):
     levels = WaterLevel.objects.select_related('region').all()
@@ -34,6 +36,7 @@ def water_level_history(request, region_id):
     except Exception as e:
         return JsonResponse({'success': False, 'error': str(e)})
 
+# Report an emergency
 def report_emergency(request):
     if request.method == 'POST':
         region_id = request.POST.get('region')
@@ -49,9 +52,26 @@ def report_emergency(request):
                 location=location,
                 urgency_level=urgency_level,
             )
-            return JsonResponse({'success': True, 'message': 'Emergency report submitted'})
+            # Redirect to the map after successful submission
+            return HttpResponseRedirect(reverse('map'))
         except Exception as e:
             return JsonResponse({'success': False, 'error': str(e)})
     else:
         regions = Region.objects.all()
         return render(request, 'report_emergency.html', {'regions': regions})
+
+# Fetch emergencies for map
+def fetch_emergencies_view(request):
+    emergencies = EmergencyReport.objects.all()
+    data = [
+        {
+            "region": emergency.region,
+            "description": emergency.description,
+            "latitude": emergency.region.latitude,
+            "longitude": emergency.region.longitude,
+            "location": emergency.location,
+            "urgency_level": emergency.urgency_level
+        }
+        for emergency in emergencies
+    ]
+    return JsonResponse(data, safe=False)

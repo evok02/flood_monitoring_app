@@ -119,3 +119,33 @@ function fetchWaterLevelHistory(regionId) {
             alert("An error occurred while fetching data.");
         });
 }
+
+// Fetch emergency data and add markers
+fetch("/map/fetch-emergencies/")
+    .then((response) => response.json())
+    .then((data) => {
+        data.forEach((emergency) => {
+            const color =
+                emergency.urgency_level === "high"
+                    ? "red"
+                    : emergency.urgency_level === "medium"
+                    ? "orange"
+                    : "green";
+
+            // Add marker for the emergency
+            L.circleMarker([emergency.latitude, emergency.longitude], {
+                radius: 8,
+                fillColor: color,
+                color: "#000",
+                weight: 1,
+                fillOpacity: 0.8,
+            })
+                .addTo(map)
+                .bindPopup(
+                    `<strong>${emergency.region}</strong><br>${emergency.description}<br><em>Urgency: ${emergency.urgency_level}</em>`
+                );
+        });
+    })
+    .catch((error) => {
+        console.error("Error fetching emergency data:", error);
+    });
