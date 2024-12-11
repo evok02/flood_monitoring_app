@@ -42,6 +42,8 @@ def report_emergency(request):
         region_id = request.POST.get('region')
         description = request.POST.get('description')
         location = request.POST.get('location')
+        latitude = request.POST.get('latitude')
+        longitude = request.POST.get('longitude')
         urgency_level = request.POST.get('urgency_level')
 
         try:
@@ -50,6 +52,8 @@ def report_emergency(request):
                 region=region,
                 description=description,
                 location=location,
+                latitude=latitude,
+                longitude=longitude,
                 urgency_level=urgency_level,
             )
             # Redirect to the map after successful submission
@@ -62,15 +66,15 @@ def report_emergency(request):
 
 # Fetch emergencies for map
 def fetch_emergencies_view(request):
-    emergencies = EmergencyReport.objects.all()
+    emergencies = EmergencyReport.objects.select_related('region').all()
     data = [
         {
-            "region": emergency.region,
+            "region": emergency.region.name,
             "description": emergency.description,
             "latitude": emergency.region.latitude,
             "longitude": emergency.region.longitude,
             "location": emergency.location,
-            "urgency_level": emergency.urgency_level
+            "urgency_level": emergency.urgency_level,
         }
         for emergency in emergencies
     ]

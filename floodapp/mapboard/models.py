@@ -29,6 +29,9 @@ class EmergencyReport(models.Model):
     description = models.TextField()
     # Specific location
     location = models.CharField(max_length=255, blank=True, null=True)
+    # Latitude and longitude for the emergency location
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
     # Level of urgency
     urgency_level = models.CharField(
         max_length=50,

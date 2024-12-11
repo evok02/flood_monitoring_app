@@ -1,81 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Emergency</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        form {
-            margin-top: 20px;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-        select, textarea, input[type="text"], button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Report an Emergency</h1>
-        <form method="POST" action="{% url 'report-emergency' %}">
-            {% csrf_token %}
-            <label for="region">Region:</label>
-            <select name="region" id="region" required>
-                {% for region in regions %}
-                    <option value="{{ region.id }}">{{ region.name }}</option>
-                {% endfor %}
-            </select>
+    <h1>Report an Emergency</h1>
+    <form method="POST" action="{% url 'report-emergency' %}">
+        {% csrf_token %}
+        <label for="region">Region:</label>
+        <select name="region" id="region" required>
+            {% for region in regions %}
+                <option value="{{ region.id }}">{{ region.name }}</option>
+            {% endfor %}
+        </select>
 
-            <label for="description">Incident Description:</label>
-            <textarea name="description" id="description" rows="4" required></textarea>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" required></textarea>
 
-            <label for="location">Location of the Incident:</label>
-            <input type="text" name="location" id="location" placeholder="Enter location" required />
+        <label for="location">Specific Location (Optional):</label>
+        <input type="text" name="location" id="location" placeholder="Enter landmark or address">
 
-            <label for="urgency_level">Urgency Level:</label>
-            <select name="urgency_level" id="urgency_level" required>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
+        <p>Click on the map to select the location of the emergency:</p>
+        <div id="map" style="height: 400px;"></div>
+        <input type="hidden" name="latitude" id="latitude">
+        <input type="hidden" name="longitude" id="longitude">
 
-            <button type="submit">Submit Report</button>
-        </form>
-    </div>
+        <label for="urgency_level">Urgency Level:</label>
+        <select name="urgency_level" id="urgency_level" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const map = L.map('map').setView([47.5162, 14.5501], 7); // Austria map center
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        let marker;
+        map.on('click', function (e) {
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            marker = L.marker(e.latlng).addTo(map);
+            document.getElementById('latitude').value = e.latlng.lat;
+            document.getElementById('longitude').value = e.latlng.lng;
+        });
+    </script>
 </body>
 </html>
