@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, get_user_model
 from .form import RegisteredCustomerForm
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -20,6 +21,9 @@ def register_customer(request):
             messages.success(request, 'Account created. Please log in')
             return redirect('login')
         else:
+            if 'email' in form.errors and 'User with this Email already exists.' in form.errors['email']:
+                messages.warning(request, 'User with this email already exists.')
+                return render(request, 'register-customer.html', {'form': form}, status=409)
             print("Form errors:", form.errors)
             print("first else statement")
             messages.warning(request, 'Something went wrong. Please check form errors')
@@ -28,7 +32,7 @@ def register_customer(request):
     else:
         print('second else statement')  # Debugging
         form = RegisteredCustomerForm()
-        context = {'fo  rm': form}
+        context = {'form': form}
         return render(request, 'register-customer.html', {'form': form})
 
 
@@ -41,8 +45,11 @@ def login_user(request):
             login(request, user)
             return redirect('map')
         else:
+            if user is None:
+                messages.warning(request, 'User not found. If you have not registered yet, proceed to sign up')
+                return render(request, 'login.html', status=400)
             messages.warning(request, 'Something went wrong. Please check form errors')
-            return redirect('login')
+            return redirect('login', status=400)
     else:
         return render(request, 'login.html')
 
