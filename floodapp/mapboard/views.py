@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-from django.shortcuts import render, redirect
-=======
-from django.shortcuts import render, get_object_or_404
->>>>>>> origin
+
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
@@ -57,7 +54,6 @@ def report_emergency_view(request):
     regions = Region.objects.all()
     return render(request, 'report_emergency.html', {'regions': regions})
 
-<<<<<<< HEAD
 
 #@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
@@ -138,7 +134,6 @@ def update_event(request):
         update_form = None
 
     return render(request, 'update_event.html', {'select_form': select_form, 'update_form': update_form})
-=======
 def historical_data_view(request):
     station_id = request.GET.get('hzbnr')
     if not station_id:
@@ -155,4 +150,3 @@ def historical_data_view(request):
         'measurements': measurements,
     }
     return render(request, 'historical_data.html', context)
->>>>>>> origin
