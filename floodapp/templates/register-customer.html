@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    {% load static %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headerContent %}
+{% load static %}
     <meta charset="utf-8">
     <title>Register</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  </head>
-  <body>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+{% endblock headerContent %}
+{% block pageContent %}
     <div class="center">
         <h1>Register</h1>
         <form method="POST" action="{% url 'register-customer' %}">
@@ -70,11 +71,14 @@
     </div>
 
     <style>
-      .error-list {
+    .error-list {
         color: red;
         font-size: 0.9em;
         margin-top: 5px;
-      }
+    }
     </style>
-</body>
-</html>
+{% endblock pageContent %}
+
+
+
+

@@ -1,14 +1,15 @@
 
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseRedirect
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
 from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm
 import logging
-
+from django.urls import reverse
 logger = logging.getLogger('flood_app')
+
 
 def water_levels_api(request):
     logger.info('Fetching water levels from database.')
@@ -58,12 +59,47 @@ def water_level_history(request, region_id):
         logger.info(f'Error fetching water level history for region {region_id}')
         return JsonResponse({'success': False, 'error': str(e)})
 
+def report_emergency(request):
+    if request.method == 'POST':
+        region_id = request.POST.get('region')
+        description = request.POST.get('description')
+        location = request.POST.get('location')
+        latitude = request.POST.get('latitude')
+        longitude = request.POST.get('longitude')
+        urgency_level = request.POST.get('urgency_level')
 
-def report_emergency_view(request):
-    logger.info('Rendering emergency report page')
-    regions = Region.objects.all()
-    return render(request, 'report_emergency.html', {'regions': regions})
-
+        try:
+            region = Region.objects.get(id=region_id)
+            EmergencyReport.objects.create(
+                region=region,
+                description=description,
+                location=location,
+                latitude=latitude,
+                longitude=longitude,
+                urgency_level=urgency_level,
+            )
+            # Redirect to the map after successful submission
+            return HttpResponseRedirect(reverse('map'))
+        except Exception as e:
+            return JsonResponse({'success': False, 'error': str(e)})
+    else:
+        regions = Region.objects.all()
+        return render(request, 'report_emergency.html', {'regions': regions})
+    
+def fetch_emergencies_view(request):
+        emergencies = EmergencyReport.objects.select_related('region').all()
+        data = [
+            {
+                "region": emergency.region.name,
+                "description": emergency.description,
+                "latitude": emergency.region.latitude,
+                "longitude": emergency.region.longitude,
+                "location": emergency.location,
+                "urgency_level": emergency.urgency_level,
+            }
+            for emergency in emergencies
+        ]
+        return JsonResponse(data, safe=False)
 
 #@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
