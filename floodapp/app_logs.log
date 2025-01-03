@@ -1393,3 +1393,1826 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 "GET /js/custom.js HTTP/1.1" 404 3011
 "GET /js/jquery-3.4.1.min.js HTTP/1.1" 404 3041
 "GET /js/bootstrap.js HTTP/1.1" 404 3020
+Admin page accessed by user testusertest@gmail.com
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates with glob **/*.
+Watching dir /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/locale with glob **/*.mo.
+Watching dir /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/locale with glob **/*.mo.
+Watching dir /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/locale with glob **/*.mo.
+Watching dir /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/widget_tweaks/locale with glob **/*.mo.
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/aggregates.py first seen with mtime 1733839704.0783427
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/related_lookups.py first seen with mtime 1733839704.0814
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/http/multipartparser.py first seen with mtime 1733839704.0945506
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/translation/reloader.py first seen with mtime 1733839704.1079104
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/base64mime.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py first seen with mtime 1733839703.999207
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/dotenv/variables.py first seen with mtime 1731075618.1138535
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/exceptions.py first seen with mtime 1733839704.0966852
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_random.cpython-313-darwin.so first seen with mtime 1730058522.87304
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_zoneinfo.cpython-313-darwin.so first seen with mtime 1730058523.2607348
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/base.py first seen with mtime 1733839703.7335148
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/logging/handlers.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/math.cpython-313-darwin.so first seen with mtime 1730058523.3544507
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/functional.py first seen with mtime 1733839704.104096
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/utils.py first seen with mtime 1733839704.0773058
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_colorize.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py first seen with mtime 1733839704.0621648
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/__init__.py first seen with mtime 1733839703.6548135
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/registry.py first seen with mtime 1733839704.0589366
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/database.py first seen with mtime 1733839704.058172
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loaders/__init__.py first seen with mtime 1733839704.0982244
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/tasks.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/extensions.py first seen with mtime 1733839219.3646386
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/utils.py first seen with mtime 1733839704.0543344
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/sql.py first seen with mtime 1733839219.365054
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/secrets.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/zlib.cpython-313-darwin.so first seen with mtime 1730058523.54222
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py first seen with mtime 1733938570.1429915
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/utils.py first seen with mtime 1733839704.0565298
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/views/__init__.py first seen with mtime 1733839703.7337046
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/streams.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/events.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/response.py first seen with mtime 1733839704.0973208
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/asgiref/__init__.py first seen with mtime 1731075478.0898583
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_text.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/backends/base.py first seen with mtime 1733839704.097806
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/wsgiref/handlers.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_tasks.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/mail/message.py first seen with mtime 1733839704.0625129
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/locks.py first seen with mtime 1733839704.0604434
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/renderers.py first seen with mtime 1733839704.0848458
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/move.py first seen with mtime 1733839704.060539
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/unicodedata.cpython-313-darwin.so first seen with mtime 1730058523.480717
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/__init__.py first seen with mtime 1733839704.0601301
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/middleware.py first seen with mtime 1733839703.7664406
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/datastructures.py first seen with mtime 1733839704.1027997
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/__init__.py first seen with mtime 1733839704.053502
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/binascii.cpython-313-darwin.so first seen with mtime 1730058523.2920513
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_uuid.cpython-313-darwin.so first seen with mtime 1730058523.229231
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_datetime.cpython-313-darwin.so first seen with mtime 1730058522.5604417
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/_json.py first seen with mtime 1733839219.3626633
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fnmatch.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/features.py first seen with mtime 1733839704.0736482
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/lexer.py first seen with mtime 1733839702.81703
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/warnings.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/utils.py first seen with mtime 1733839703.6564605
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/utils.py first seen with mtime 1733839702.8173187
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/hashable.py first seen with mtime 1733839704.104184
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/difflib.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/__init__.py first seen with mtime 1733839704.0826278
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/termcolors.py first seen with mtime 1733839704.1057699
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/tokens.py first seen with mtime 1733839703.7669609
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/mail/__init__.py first seen with mtime 1733839704.0624082
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/management/__init__.py first seen with mtime 1733839703.8008509
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/l10n.py first seen with mtime 1733839704.0993674
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loaders/base.py first seen with mtime 1733839704.0984004
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/clickjacking.py first seen with mtime 1733839704.0950897
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/math.py first seen with mtime 1733839704.0820768
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/deconstruct.py first seen with mtime 1733839704.1031938
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/checks.py first seen with mtime 1733839703.7657735
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_futures.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/wsgi.py first seen with mtime 1733839704.056185
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/numberformat.py first seen with mtime 1733839704.1054
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/widgets.py first seen with mtime 1733839704.0850978
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/apps.py first seen with mtime 1733838301.6976984
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/timezone.py first seen with mtime 1733839704.1072695
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/log.py first seen with mtime 1733839704.105119
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/signing.py first seen with mtime 1733839704.055981
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/apps.py first seen with mtime 1733838301.8761263
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/hashers.py first seen with mtime 1733839703.7663362
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/operations/models.py first seen with mtime 1733839704.0779855
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/encodings/aliases.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/generator.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/options.py first seen with mtime 1733839704.0795286
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/__init__.py first seen with mtime 1733839704.0754292
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/wsgiref/simple_server.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/checks.py first seen with mtime 1733839704.053713
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/iterators.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/__init__.py first seen with mtime 1733839704.0617142
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/sitecustomize.py first seen with mtime 1730058523.5488207
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/base.py first seen with mtime 1733839704.0785112
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/feedparser.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_opcode_metadata.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/http/request.py first seen with mtime 1733839704.0946631
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/_abc.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/introspection.py first seen with mtime 1733839704.069366
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/array.cpython-313-darwin.so first seen with mtime 1730058523.2765176
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/translation/__init__.py first seen with mtime 1733839704.107818
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py first seen with mtime 1733838301.6989665
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/types.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/cache.py first seen with mtime 1733839704.1021354
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/abc.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/utils.py first seen with mtime 1733839704.0685315
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/exceptions.py first seen with mtime 1733839704.0555406
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/engine/statement_splitter.py first seen with mtime 1733839702.817761
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/asyncio.py first seen with mtime 1733839704.1019168
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/graph.py first seen with mtime 1733839704.0759444
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/loader.py first seen with mtime 1733839704.0760515
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/exceptions.py first seen with mtime 1733839702.8167152
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_constants.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/base.py first seen with mtime 1733839704.0687346
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/__init__.py first seen with mtime 1733839703.5998232
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_lzma.cpython-313-darwin.so first seen with mtime 1730058522.7334642
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/files.py first seen with mtime 1733839704.0805824
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/context.py first seen with mtime 1733839704.096134
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/resources/_functional.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/form.py first seen with mtime 1733938570.1425915
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/utils.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/servers/basehttp.py first seen with mtime 1733839704.0676897
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/security/sessions.py first seen with mtime 1733839704.059872
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/middleware.py first seen with mtime 1733839703.9409466
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/struct.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/_range.py first seen with mtime 1733839219.3637917
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/dates.py first seen with mtime 1733839704.1031091
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/exceptions.py first seen with mtime 1733839704.075679
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sites/requests.py first seen with mtime 1733839704.0272884
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/conf.py first seen with mtime 1733839704.1011043
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/mixins.py first seen with mtime 1733839704.061626
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/translation/trans_real.py first seen with mtime 1733839704.1082377
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/engine/filter_stack.py first seen with mtime 1733839702.817526
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/engine/__init__.py first seen with mtime 1733839702.8174393
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/crypto.py first seen with mtime 1733839704.1026669
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/__init__.py first seen with mtime 1733839704.1083868
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/backends/__init__.py first seen with mtime 1733839704.0566034
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/fields.py first seen with mtime 1733839704.0843234
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/views.py first seen with mtime 1733839703.804162
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/caches.py first seen with mtime 1733839704.057927
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/serializers/base.py first seen with mtime 1733839704.0669956
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/apps.py first seen with mtime 1733839703.9985573
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/ipv6.py first seen with mtime 1733839704.1047685
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/cache.py first seen with mtime 1733839704.0988653
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/manager.py first seen with mtime 1733839704.079408
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/defaultfilters.py first seen with mtime 1733839704.0963533
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/encoders.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_posixsubprocess.cpython-313-darwin.so first seen with mtime 1730058522.8424153
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/apps.py first seen with mtime 1733839703.9403198
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/base.py first seen with mtime 1733839704.073241
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/header.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/glob.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_pickle.cpython-313-darwin.so first seen with mtime 1730058522.8118806
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/helpers.py first seen with mtime 1733839703.655646
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/logging/config.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/apps.py first seen with mtime 1733839703.765427
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sites/shortcuts.py first seen with mtime 1733839704.0273778
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/edit.py first seen with mtime 1733839704.1105165
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/mimetypes.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/asgiref/local.py first seen with mtime 1731075478.0902138
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/sites.py first seen with mtime 1733839703.6562178
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/quopri.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/format_helpers.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/decorators/common.py first seen with mtime 1733839704.1092978
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/static.py first seen with mtime 1733839704.1089375
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_casefix.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/related.py first seen with mtime 1733839704.08112
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/decorators/__init__.py first seen with mtime 1733839704.1090207
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/backends/filebased.py first seen with mtime 1733839704.057081
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/textwrap.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/subprocess.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/http/__init__.py first seen with mtime 1733839704.094345
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/regex_helper.py first seen with mtime 1733839704.1055634
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/views.py first seen with mtime 1733849236.8493168
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/widget_tweaks/templatetags/__init__.py first seen with mtime 1733839703.2788484
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/memory.py first seen with mtime 1733839704.0615408
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/__init__.py first seen with mtime 1733839703.8033576
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py first seen with mtime 1733839704.0960004
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loaders/filesystem.py first seen with mtime 1733839704.0985816
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/tokenize.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/views/main.py first seen with mtime 1733839703.7340295
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/fcntl.cpython-313-darwin.so first seen with mtime 1730058523.3233957
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/dataclasses.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_compat_pickle.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/formsets.py first seen with mtime 1733839704.0846055
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/tempfile.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/static.py first seen with mtime 1733839704.0994747
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/models.py first seen with mtime 1733839703.8039746
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/debug.py first seen with mtime 1733839704.1085997
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/shortcuts.py first seen with mtime 1733839703.6004393
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/gzip.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/api.py first seen with mtime 1733839703.9401681
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_parser.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/base.py first seen with mtime 1733839704.100966
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/base64.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/__init__.py first seen with mtime 1733839704.061086
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/__init__.py first seen with mtime 1733839704.078234
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/string.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/text.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/__init__.py first seen with mtime 1733839704.1008618
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/lookups.py first seen with mtime 1733839704.079303
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/signals.py first seen with mtime 1733839704.0557265
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py first seen with mtime 1733849236.8492508
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/backends.py first seen with mtime 1733839703.765546
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/locale.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/client.py first seen with mtime 1733839704.0734417
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/policy.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/management/color.py first seen with mtime 1733839704.0635622
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/executor.py first seen with mtime 1733839704.0757818
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/reverse_related.py first seen with mtime 1733839704.081559
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/comparison.py first seen with mtime 1733839704.0818133
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/locks.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/exceptions.py first seen with mtime 1733839704.1012912
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zoneinfo/_common.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/psycopg_any.py first seen with mtime 1733839704.0740244
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/keywords.py first seen with mtime 1733839702.8169272
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/response.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/exceptions.py first seen with mtime 1733839703.998733
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py first seen with mtime 1733839704.0620627
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/actions.py first seen with mtime 1733839703.6549156
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loaders/cached.py first seen with mtime 1733839704.0984886
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/indexes.py first seen with mtime 1733839704.079198
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/password_validation.py first seen with mtime 1733839703.7667797
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/backends/__init__.py first seen with mtime 1733839703.999089
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_bisect.cpython-313-darwin.so first seen with mtime 1730058522.325392
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/getpass.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/management/__init__.py first seen with mtime 1733839704.0545151
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/numbers.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/views.py first seen with mtime 1733839704.0544243
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/utils.py first seen with mtime 1733839704.0609572
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/select.cpython-313-darwin.so first seen with mtime 1730058523.432218
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/error.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/conf/__init__.py first seen with mtime 1733839703.601073
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/csrf.py first seen with mtime 1733839704.0953157
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/backends/django.py first seen with mtime 1733839704.0979104
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loader_tags.py first seen with mtime 1733839704.0972033
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_itertools.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/futures.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/dispatch/__init__.py first seen with mtime 1733839704.0835867
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/urls.py first seen with mtime 1733839704.0592365
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/quoprimime.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/handler.py first seen with mtime 1733839704.0614145
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_bz2.cpython-313-darwin.so first seen with mtime 1730058522.355914
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/backends/locmem.py first seen with mtime 1733839704.0571663
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/threads.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/dis.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/trsock.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/forms.py first seen with mtime 1733839703.8038566
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_struct.cpython-313-darwin.so first seen with mtime 1730058523.022724
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/models.py first seen with mtime 1733938570.1428797
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/ddl_references.py first seen with mtime 1733839704.0683255
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/__init__.py first seen with mtime 1733839704.07312
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/output.py first seen with mtime 1733839702.8181388
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/__init__.py first seen with mtime 1733839703.6546547
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/views/autocomplete.py first seen with mtime 1733839703.7338302
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/utils.py first seen with mtime 1733839703.9411185
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/multipart.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/widget_tweaks/models.py first seen with mtime 1733839703.278753
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/charset.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/html/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/opcode.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/management/commands/__init__.py first seen with mtime 1733839704.0546243
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/files.py first seen with mtime 1733839704.0586007
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/apps/config.py first seen with mtime 1733839703.6007655
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/state.py first seen with mtime 1733839704.0771768
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/forms.py first seen with mtime 1733839703.7662196
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/models.py first seen with mtime 1733938632.049151
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/deletion.py first seen with mtime 1733839704.0787997
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/encoding.py first seen with mtime 1733839704.1036265
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/management/__init__.py first seen with mtime 1733839704.063371
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/tokens.py first seen with mtime 1733839702.8184211
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/views.py first seen with mtime 1733938570.1410146
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_queue.cpython-313-darwin.so first seen with mtime 1730058522.8578107
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/__init__.py first seen with mtime 1733838301.8748326
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/models.py first seen with mtime 1733839704.0847514
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/cookies.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/message.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pkgutil.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/base_session.py first seen with mtime 1733839703.9986494
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/sql.py first seen with mtime 1733839702.817132
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/datetime.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/inspect.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/validators.py first seen with mtime 1733839703.7671592
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/wsgiref/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/serializers/__init__.py first seen with mtime 1733839704.066829
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/wsgi.py first seen with mtime 1733839704.0622697
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/options.py first seen with mtime 1733839703.6560898
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/decorators.py first seen with mtime 1733838301.8762505
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/widgets.py first seen with mtime 1733839703.6565747
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/async_checks.py first seen with mtime 1733839704.057842
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py first seen with mtime 1733839704.0804682
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/engine.py first seen with mtime 1733839704.0966003
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/bisect.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/window.py first seen with mtime 1733839704.0825112
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/duration.py first seen with mtime 1733839704.103499
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/storage/__init__.py first seen with mtime 1733839703.9414272
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pprint.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/fields.py first seen with mtime 1733839703.8037634
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/detail.py first seen with mtime 1733839704.1103902
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/autoreload.py first seen with mtime 1733839704.1020298
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/translation.py first seen with mtime 1733839704.059118
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/schema.py first seen with mtime 1733839704.074181
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/__init__.py first seen with mtime 1733839704.0816925
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/exceptions.py first seen with mtime 1733839703.6553261
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/reindent.py first seen with mtime 1733839702.8182406
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/generated.py first seen with mtime 1733839704.0806863
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zoneinfo/_tzpath.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/boundfield.py first seen with mtime 1733839704.0841799
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/admin.py first seen with mtime 1733838301.8761015
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/traceback.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/floodapp/__init__.py first seen with mtime 1731075280.20179
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/bz2.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/__init__.py first seen with mtime 1733839704.1100085
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/apps/registry.py first seen with mtime 1733839703.6009026
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/dateformat.py first seen with mtime 1733839704.1029184
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_compression.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/validation.py first seen with mtime 1733839704.0697317
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/utils.py first seen with mtime 1733839704.0849621
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/random.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/temp.py first seen with mtime 1733839704.0606303
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/__init__.py first seen with mtime 1733839704.0681984
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/hashlib.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/conf/locale/__init__.py first seen with mtime 1733839703.6020172
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_opcode.cpython-313-darwin.so first seen with mtime 1730058522.7962325
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/i18n.py first seen with mtime 1733839704.1088367
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/where.py first seen with mtime 1733839704.083463
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/admin.py first seen with mtime 1733838301.6976128
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/decorators.py first seen with mtime 1733839704.1033087
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/_header_value_parser.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/decorators.py first seen with mtime 1733839703.7661061
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/query.py first seen with mtime 1733839704.0797143
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/signal.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/__init__.py first seen with mtime 1733839702.8178768
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/views.py first seen with mtime 1733938570.1432362
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_asyncio.cpython-313-darwin.so first seen with mtime 1730058522.3101718
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/asgiref/sync.py first seen with mtime 1731075478.0905063
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/compatibility/__init__.py first seen with mtime 1733839704.059331
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextvars.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_scproxy.cpython-313-darwin.so first seen with mtime 1730058522.8885858
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/creation.py first seen with mtime 1733839704.0735414
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/decorators.py first seen with mtime 1733839703.6552346
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_contextvars.cpython-313-darwin.so first seen with mtime 1730058522.4668949
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/middleware.py first seen with mtime 1733839703.998819
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/taskgroups.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/termios.cpython-313-darwin.so first seen with mtime 1730058523.4639094
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/copy.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/connection.py first seen with mtime 1733839704.102323
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/dates.py first seen with mtime 1733839704.1102612
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/platform.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/decorators/cache.py first seen with mtime 1733839704.10912
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/json.py first seen with mtime 1733839704.080791
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/enums.py first seen with mtime 1733839704.0789046
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/choices.py first seen with mtime 1733839704.1022396
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/encodings/utf_8.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/resources/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/message.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/__init__.py first seen with mtime 1733839704.0948584
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/finders.py first seen with mtime 1733839704.053846
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/collections/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/management/commands/__init__.py first seen with mtime 1733839704.0639956
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/__init__.py first seen with mtime 1733839704.0678234
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/cache.py first seen with mtime 1733839704.0949957
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loader.py first seen with mtime 1733839704.0970364
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/extras.py first seen with mtime 1733839219.3647778
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/mixins.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/serializers/python.py first seen with mtime 1733839704.0672915
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/graphlib.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/proxy.py first seen with mtime 1733839704.080968
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/servers/__init__.py first seen with mtime 1733839704.0675554
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/headerregistry.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/__init__.py first seen with mtime 1733839704.1015887
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/forms.py first seen with mtime 1733839704.0844917
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/base.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/defaulttags.py first seen with mtime 1733839704.0964952
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/queues.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_hashlib.cpython-313-darwin.so first seen with mtime 1730058522.6246183
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_json.cpython-313-darwin.so first seen with mtime 1730058522.7021813
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/argparse.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/signals.py first seen with mtime 1733839704.08017
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/errors.py first seen with mtime 1733839219.3645298
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/compatibility/django_4_0.py first seen with mtime 1733839704.0594525
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/checks.py first seen with mtime 1733839703.6551375
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_functools.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/__init__.py first seen with mtime 1733839704.0553517
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/converters.py first seen with mtime 1733839704.101205
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/_os.py first seen with mtime 1733839704.1017075
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/management/base.py first seen with mtime 1733839704.0634744
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/_policybase.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_meta.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/transports.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/tz.py first seen with mtime 1733839704.099585
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/grp.cpython-313-darwin.so first seen with mtime 1730058523.338919
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zoneinfo/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/resources/abc.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/mixins.py first seen with mtime 1733839704.0808833
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/tree.py first seen with mtime 1733839704.1074178
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/constants.py first seen with mtime 1733839704.0785942
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/exceptions.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/log.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/constants.py first seen with mtime 1733839703.9404101
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/creation.py first seen with mtime 1733839704.069086
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/calendar.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_markupbase.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/_path/glob.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/widget_tweaks/templatetags/widget_tweaks.py first seen with mtime 1733839703.2791095
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/__init__.py first seen with mtime 1733839704.0686119
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/utils.py first seen with mtime 1733839704.0802624
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/migration.py first seen with mtime 1733839704.0761783
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/__init__.py first seen with mtime 1733839702.816415
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/dispatch/dispatcher.py first seen with mtime 1733839704.0836883
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_weakrefset.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/introspection.py first seen with mtime 1733839704.0737708
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/_ipaddress.py first seen with mtime 1733839219.362547
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/decimal.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/__init__.py first seen with mtime 1733839704.0563078
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/inspect.py first seen with mtime 1733839704.1046333
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/smartif.py first seen with mtime 1733839704.0974383
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/encodings/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/datastructures.py first seen with mtime 1733839704.0829935
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/engine/grouping.py first seen with mtime 1733839702.8176706
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/library.py first seen with mtime 1733839704.0968425
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/checks.py first seen with mtime 1733839703.8036463
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/manage.py first seen with mtime 1731692318.4410193
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/cache/backends/base.py first seen with mtime 1733839704.0567708
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/__init__.py first seen with mtime 1733839703.7330096
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/mime/nonmultipart.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/_parseaddr.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/constants.py first seen with mtime 1733839704.0828748
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/model_checks.py first seen with mtime 1733839704.0588412
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/operator.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/datetime.py first seen with mtime 1733839704.0819685
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/list.py first seen with mtime 1733839704.1106303
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/weakref.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/models.py first seen with mtime 1733839703.998908
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/expressions.py first seen with mtime 1733839704.079064
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/operations/fields.py first seen with mtime 1733839704.0778658
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/sysconfig/__init__.py first seen with mtime 1730058523.5491626
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sites/__init__.py first seen with mtime 1733839704.0265603
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/admin_list.py first seen with mtime 1733839703.7331378
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/aligned_indent.py first seen with mtime 1733839702.8179646
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py first seen with mtime 1733839704.1014097
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/security/__init__.py first seen with mtime 1733839704.0595443
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/models.py first seen with mtime 1733839703.6557856
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/operations.py first seen with mtime 1733839704.0694761
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/logging/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_heapq.cpython-313-darwin.so first seen with mtime 1730058522.640038
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/base_user.py first seen with mtime 1733839703.7656534
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/uuid.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/__future__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/token.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/__init__.py first seen with mtime 1733839704.098755
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/floodapp/urls.py first seen with mtime 1733849966.1144354
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/re/_compiler.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/text.py first seen with mtime 1733839704.1063168
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/floodapp/settings.py first seen with mtime 1733938570.141755
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/validators.py first seen with mtime 1733839704.0561001
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/__init__.py first seen with mtime 1733838301.6944666
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/handlers.py first seen with mtime 1733839704.0539436
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/security.py first seen with mtime 1733839704.0956535
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ast.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_decimal.cpython-313-darwin.so first seen with mtime 1730058522.593181
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/timeouts.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/unix_events.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/constants.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/module_loading.py first seen with mtime 1733839704.1053147
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/mixins.py first seen with mtime 1733839704.082297
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_subprocess.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/filesystem.py first seen with mtime 1733839704.0613246
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/timesince.py first seen with mtime 1733839704.1068153
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/admin.py first seen with mtime 1733839703.7653384
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/templates.py first seen with mtime 1733839704.0590258
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/base.py first seen with mtime 1733839704.0602374
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_ssl.cpython-313-darwin.so first seen with mtime 1730058522.9892437
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/keyword.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/messages.py first seen with mtime 1733839704.0586965
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/dateparse.py first seen with mtime 1733839704.1030211
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/encodings/utf_8_sig.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/selectors.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/_psycopg.cpython-313-darwin.so first seen with mtime 1733839219.3634136
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/views.py first seen with mtime 1733839703.7673328
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/defaults.py first seen with mtime 1733839704.1087034
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/asgiref/current_thread_executor.py first seen with mtime 1731075478.0900998
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/features.py first seen with mtime 1733839704.0692568
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/admin.py first seen with mtime 1733839703.8034828
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/utils.py first seen with mtime 1733839704.097527
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/__init__.py first seen with mtime 1733839704.0957797
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/__init__.py first seen with mtime 1733839703.7652159
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/forms/__init__.py first seen with mtime 1733839704.0840087
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/uploadhandler.py first seen with mtime 1733839704.0608606
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/apps/__init__.py first seen with mtime 1733839703.600607
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/html/entities.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/fields/related_descriptors.py first seen with mtime 1733839704.0812778
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/conf/urls/__init__.py first seen with mtime 1733839703.6542351
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_adapters.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/loaders/app_directories.py first seen with mtime 1733839704.0983148
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_blake2.cpython-313-darwin.so first seen with mtime 1730058522.3406901
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/safestring.py first seen with mtime 1733839704.105659
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py first seen with mtime 1733839704.1094098
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ipaddress.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/apps.py first seen with mtime 1733839704.053616
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/csrf.py first seen with mtime 1733839704.1084862
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/reprlib.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/autoreload.py first seen with mtime 1733839704.095864
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/_distutils_hack/__init__.py first seen with mtime 1733839218.656526
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_socket.cpython-313-darwin.so first seen with mtime 1730058522.9543917
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/storage/base.py first seen with mtime 1733839704.061198
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/backends/__init__.py first seen with mtime 1733839704.097604
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/mail/utils.py first seen with mtime 1733839704.0625997
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/copyreg.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/lorem_ipsum.py first seen with mtime 1733839704.1052256
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/conf/global_settings.py first seen with mtime 1733839703.6012008
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/transaction.py first seen with mtime 1733839704.0679781
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/gettext.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/utils.py first seen with mtime 1733839704.0681076
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/cli.py first seen with mtime 1733839702.816616
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/dotenv/parser.py first seen with mtime 1731075618.113591
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/query_utils.py first seen with mtime 1733839704.0798209
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/contentmanager.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/heapq.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/constraints.py first seen with mtime 1733839704.0787008
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/management/commands/runserver.py first seen with mtime 1733839704.0655224
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/operations/__init__.py first seen with mtime 1733839704.0775914
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/formatter.py first seen with mtime 1733839702.816812
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/asgi.py first seen with mtime 1733839704.0619016
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/__init__.py first seen with mtime 1733839703.9984539
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/tokens.py first seen with mtime 1733839702.817224
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/psycopg2/__init__.py first seen with mtime 1733839219.3624146
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/__init__.py first seen with mtime 1733839704.057756
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/widget_tweaks/__init__.py first seen with mtime 1733839703.2787027
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/wsgiref/util.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/admin_modify.py first seen with mtime 1733839703.733243
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/paginator.py first seen with mtime 1733839704.0556443
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/http/response.py first seen with mtime 1733839704.0947733
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/templatetags/i18n.py first seen with mtime 1733839704.0989647
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/management/commands/runserver.py first seen with mtime 1733839704.0549748
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/functions/text.py first seen with mtime 1733839704.0824206
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/utils.py first seen with mtime 1733839704.1015012
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lzma.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/postgresql/operations.py first seen with mtime 1733839704.0739377
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/metadata/_collections.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/http/cookie.py first seen with mtime 1733839704.0944343
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/dotenv/__init__.py first seen with mtime 1731075618.1127107
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/right_margin.py first seen with mtime 1733839702.8183312
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/uploadedfile.py first seen with mtime 1733839704.06074
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/security/base.py first seen with mtime 1733839704.0596852
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/protocols.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/query.py first seen with mtime 1733839704.0832007
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/filters.py first seen with mtime 1733839703.655441
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/checks/security/csrf.py first seen with mtime 1733839704.05978
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/resources/_common.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/coroutines.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/enum.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/decorators/debug.py first seen with mtime 1733839704.1095195
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_sysconfigdata__darwin_darwin.py first seen with mtime 1730058523.5472054
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/_encoded_words.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/html/parser.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/dotenv/main.py first seen with mtime 1731075618.1134243
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/operations/special.py first seen with mtime 1733839704.0780983
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/subqueries.py first seen with mtime 1733839704.083308
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/__init__.py first seen with mtime 1733839703.940016
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/schema.py first seen with mtime 1733839704.069646
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/html.py first seen with mtime 1733839704.1042836
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_osx_support.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/parser.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/log.py first seen with mtime 1733839703.7336106
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/scanner.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/http.py first seen with mtime 1733839704.1044397
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/signals.py first seen with mtime 1733839704.0684092
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/hmac.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/form.py first seen with mtime 1733838301.697876
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/templatetags/admin_urls.py first seen with mtime 1733839703.7333272
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pickle.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/queue.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/serializers/json.py first seen with mtime 1733839704.0670903
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/deprecation.py first seen with mtime 1733839704.1034086
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/models.py first seen with mtime 1733839703.7666523
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/version.py first seen with mtime 1733839704.107535
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/views/generic/base.py first seen with mtime 1733839704.1101441
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/sqlparse/filters/others.py first seen with mtime 1733839702.8180518
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/_path/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/apps.py first seen with mtime 1733839703.8035629
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/staggered.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/backends/base/client.py first seen with mtime 1733839704.068823
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/storage/base.py first seen with mtime 1733839703.9415557
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/__init__.py first seen with mtime 1733937649.9624019
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/utils/formats.py first seen with mtime 1733839704.1039329
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/files/images.py first seen with mtime 1733839704.0603378
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/middleware/common.py first seen with mtime 1733839704.0952096
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/apps.py first seen with mtime 1733839703.6550057
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/typing.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/wsgiref/headers.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/operations/base.py first seen with mtime 1733839704.0777042
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/email/errors.py first seen with mtime 1728277334.0
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/parse.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/signals.py first seen with mtime 1733839703.7668605
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/__init__.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/management/__init__.py first seen with mtime 1733839703.8333218
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/index.html first seen with mtime 1733849236.8504753
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/home.html first seen with mtime 1733849236.8503509
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/about.html first seen with mtime 1733849236.8500643
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/base.html first seen with mtime 1733849236.8501906
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/schedule.html first seen with mtime 1733938570.1434534
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/add_event.html first seen with mtime 1733938570.1433089
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/register.html first seen with mtime 1731775647.1831627
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/login.html first seen with mtime 1733849236.8507402
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/waterlevel_map.html first seen with mtime 1733938570.1436121
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/delete_event.html first seen with mtime 1733938570.1433735
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/admin_only_page.html first seen with mtime 1733838301.8767414
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/update_event.html first seen with mtime 1733938570.1435134
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/register-customer.html first seen with mtime 1733849236.8510187
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/base2.html first seen with mtime 1733849236.8502848
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/report_emergency.html first seen with mtime 1733849236.8511417
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/mapboard.html first seen with mtime 1733849236.8508902
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/templates/historical_data.html first seen with mtime 1733838301.8768816
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/migrations/0001_initial.py first seen with mtime 1733839703.7116065
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/migrations/0001_initial.py first seen with mtime 1733839703.8336456
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/migrations/0001_initial.py first seen with mtime 1733838301.6981833
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/migrations/__init__.py first seen with mtime 1733839703.711818
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0007_alter_validators_add_error_messages.py first seen with mtime 1733839703.8019593
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/migrations/recorder.py first seen with mtime 1733839704.0768821
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0006_require_contenttypes_0002.py first seen with mtime 1733839703.8018575
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0003_alter_user_email_max_length.py first seen with mtime 1733839703.8015814
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0005_alter_user_last_login_null.py first seen with mtime 1733839703.8017662
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/migrations/0002_remove_content_type_name.py first seen with mtime 1733839703.8338192
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0004_alter_user_username_opts.py first seen with mtime 1733839703.801677
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0008_alter_user_username_max_length.py first seen with mtime 1733839703.802048
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0001_initial.py first seen with mtime 1733839703.801389
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/__init__.py first seen with mtime 1733839703.8028638
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/migrations/__init__.py first seen with mtime 1733838301.698228
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/migrations/__init__.py first seen with mtime 1733839704.025837
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0012_alter_user_first_name_max_length.py first seen with mtime 1733839703.80282
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/migrations/0001_initial.py first seen with mtime 1733839704.0257907
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0002_alter_permission_name_max_length.py first seen with mtime 1733839703.8014822
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/migrations/0002_logentry_remove_auto_add.py first seen with mtime 1733839703.7116897
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0009_alter_user_last_name_max_length.py first seen with mtime 1733839703.802424
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0010_alter_group_name_max_length.py first seen with mtime 1733839703.8025143
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/admin/migrations/0003_logentry_add_action_flag_choices.py first seen with mtime 1733839703.7117772
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/contenttypes/migrations/__init__.py first seen with mtime 1733839703.8338575
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/migrations/0011_update_proxy_permissions.py first seen with mtime 1733839703.8027172
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/encodings/idna.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py first seen with mtime 1733839704.0827935
+File /opt/homebrew/Cellar/python@3.13/3.13.0_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/stringprep.py first seen with mtime 1728277334.0
+File /Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/floodapp/wsgi.py first seen with mtime 1731075280.2027063
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/backends/db.py first seen with mtime 1733839703.9995131
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/auth/context_processors.py first seen with mtime 1733839703.7659945
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/storage/session.py first seen with mtime 1733839703.9418666
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/context_processors.py first seen with mtime 1733839704.0962327
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/sessions/serializers.py first seen with mtime 1733839703.9989939
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/storage/cookie.py first seen with mtime 1733839703.941694
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/storage/fallback.py first seen with mtime 1733839703.941783
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/messages/context_processors.py first seen with mtime 1733839703.9407494
+File /Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/contrib/staticfiles/storage.py first seen with mtime 1733839704.0540562
+"GET / HTTP/1.1" 200 9674
+"GET /static/images/slider-bg.jpg HTTP/1.1" 304 0
+"GET /static/css/bootstrap.css HTTP/1.1" 304 0
+"GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+"GET /static/css/responsive.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/images/about-img.jpg HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+"GET /static/images/logo2.png HTTP/1.1" 404 1862
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+"GET /js/jquery-3.4.1.min.js HTTP/1.1" 404 3041
+"GET /js/bootstrap.js HTTP/1.1" 404 3020
+"GET /js/custom.js HTTP/1.1" 404 3011
+"GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 0
+Fetching water levels from database.
+Fetched water levels.
+"GET /map/ HTTP/1.1" 200 8060
+"GET /static/css/map.css HTTP/1.1" 304 0
+"GET /static/js/map.js HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+"GET /static/images/logo2.png HTTP/1.1" 404 1862
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern '' [name='map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'water-map/' [name='waterlevel-map']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'history/<int:region_id>/' [name='water-level-history']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'report-emergency/' [name='report-emergency']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'admin_only_page/' [name='admin_only_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'schedule/' [name='task_scheduling_page']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'add-event/' [name='add_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'api/events/' [name='event_list']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'delete_event/' [name='delete_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'update_event/' [name='update_event']>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>, <URLPattern 'historical-data/' [name='historical_data']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'map/js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+"GET /map/js/jquery-3.4.1.min.js HTTP/1.1" 404 5902
+"GET /map/js/bootstrap.js HTTP/1.1" 404 5881
+"GET /map/js/custom.js HTTP/1.1" 404 5872
+"GET /static/js/austria.geojson HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9674
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+"GET /static/images/logo2.png HTTP/1.1" 404 1862
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/custom.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/bootstrap.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+"GET /js/custom.js HTTP/1.1" 404 3011
+"GET /js/bootstrap.js HTTP/1.1" 404 3020
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/accounts/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'index.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/index/urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>]], 'path': 'js/jquery-3.4.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vlasokseniuk/Desktop/FloodMonitor/.venv/lib/python3.13/site-packages/django/template/base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'mapboard.urls' from '/Users/vlasokseniuk/Desktop/FloodMonitor/floodapp/mapboard/urls.py'> (None:None) 'map/'>
+"GET /js/jquery-3.4.1.min.js HTTP/1.1" 404 3041
