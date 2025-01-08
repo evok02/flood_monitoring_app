@@ -6,8 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 psycopg2 = "==2.9.5"
-django-widget-tweaks = "*"
 python-dotenv = "*"
+django-widget-tweaks = "*"
+celery = "*"
+redis = "*"
+requests = "*"
+pytest = "*"
 
 [dev-packages]
 

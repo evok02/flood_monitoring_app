@@ -1,0 +1,57 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block headerContent %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Monitoring System</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+{% endblock headerContent %}
+
+
+
+
+
+{% block pageContent %}
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            
+            <!-- Dropdown for redirecting to map or water level map -->
+            <label for="map-options">Choose a map:</label>
+            <select id="map-options" onchange="redirectToMap()">
+                <option value="map" {% if request.path == '/map/' %}selected{% endif %}>View Map</option>
+                <option value="waterlevel-map" {% if request.path == '/map/water-map/' %}selected{% endif %}>Water Level Map</option>
+            </select>
+        </div>
+
+        <!-- Map -->
+        <div id="map" class="map-container"></div>
+        <script>
+            const austriaGeoJsonUrl = "{% static 'js/austria.geojson' %}";
+            const waterLevelGeoJsonUrl = "{% static 'js/rivers.geojson' %}";
+        </script>
+        <script src="{% static 'js/water_level_map.js' %}"></script>
+        <script>
+            function redirectToMap() {
+                const mapSelection = document.getElementById("map-options").value;
+                if (mapSelection === "map") {
+                    window.location.href = "{% url 'map' %}";  // Redirect to map page
+                } else if (mapSelection === "waterlevel-map") {
+                    window.location.href = "{% url 'waterlevel-map' %}";  // Redirect to water level map
+                }
+            }
+        </script>
+    </div>
+{% endblock pageContent %}
+
+
+

@@ -1,62 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% load static %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headerContent %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Emergency</title>
-    <link rel="stylesheet" href="{% static 'css/map.css' %}">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-</head>
-<body>
-    <h1>Report an Emergency</h1>
-    <form method="POST" action="{% url 'report-emergency' %}">
-        {% csrf_token %}
-        <label for="region">Region:</label>
-        <select name="region" id="region" required>
-            {% for region in regions %}
-                <option value="{{ region.id }}">{{ region.name }}</option>
-            {% endfor %}
-        </select>
+    <title>Report an Emergency</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/report.css' %}">
+{% endblock headerContent %}
 
-        <label for="description">Description:</label>
-        <textarea name="description" id="description" required></textarea>
 
-        <label for="location">Specific Location (Optional):</label>
-        <input type="text" name="location" id="location" placeholder="Enter landmark or address">
 
-        <p>Click on the map to select the location of the emergency:</p>
-        <div id="map" style="height: 400px;"></div>
-        <input type="hidden" name="latitude" id="latitude">
-        <input type="hidden" name="longitude" id="longitude">
 
-        <label for="urgency_level">Urgency Level:</label>
-        <select name="urgency_level" id="urgency_level" required>
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
+{% block pageContent %}
+    <div class="container">
+        <h1>Report an Emergency</h1>
+        <form method="POST" action="{% url 'report-emergency' %}" onsubmit="return showThankYouMessage()">
+            {% csrf_token %}
+            <label for="region">Region:</label>
+            <select name="region" id="region" required>
+                <!-- Options will be populated by JavaScript -->
+            </select>
 
-        <button type="submit">Submit</button>
-    </form>
+            <label for="description">Incident Description:</label>
+            <textarea name="description" id="description" rows="4" required></textarea>
 
+            <label for="location">Location of the Incident:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location" required />
+
+            <label for="urgency_level">Urgency Level:</label>
+            <select name="urgency_level" id="urgency_level" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+    <script src="{% static 'js/report.js' %}"></script>
     <script>
-        const map = L.map('map').setView([47.5162, 14.5501], 7); // Austria map center
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        let marker;
-        map.on('click', function (e) {
-            if (marker) {
-                map.removeLayer(marker);
-            }
-            marker = L.marker(e.latlng).addTo(map);
-            document.getElementById('latitude').value = e.latlng.lat;
-            document.getElementById('longitude').value = e.latlng.lng;
-        });
+        function showThankYouMessage() {
+            alert("Form successfully submitted. Thank you.");
+            return true; // Allow the form to be submitted
+        }
     </script>
-</body>
-</html>
+{% endblock pageContent %}
+
+
