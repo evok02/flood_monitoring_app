@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse, HttpResponseRedirect
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
@@ -85,7 +84,26 @@ def report_emergency(request):
     else:
         regions = Region.objects.all()
         return render(request, 'report_emergency.html', {'regions': regions})
-    
+
+# Endpoint to return all emergency reports in JSON format
+def get_emergency_reports(request):
+    reports = EmergencyReport.objects.all()
+
+    data = [
+        {
+            "id": report.id,
+            "region": report.region.name,
+            "description": report.description,
+            "latitude": report.latitude,
+            "longitude": report.longitude,
+            "urgency_level": report.urgency_level,
+            "timestamp": report.timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        for report in reports
+    ]
+
+    return JsonResponse(data, safe=False)
+
 def fetch_emergencies_view(request):
         emergencies = EmergencyReport.objects.select_related('region').all()
         data = [
