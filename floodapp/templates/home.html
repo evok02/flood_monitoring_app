@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Flood Monitoring System{% endblock title %}
+
+{% block pageContent %}
+<div class="bg-light">
+    <!-- Hero Section -->
+    <div class="text-center py-5 bg-primary text-white">
+        <h1>Welcome to the Flood Monitoring System</h1>
+        <p class="lead">Real-time flood level monitoring and reporting for better safety and preparedness.</p>
+    </div>
+
+    <!-- Navigation Panel -->
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <a href="{% url 'map' %}" class="btn btn-outline-primary btn-lg w-100">View Map</a>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <a href="#" class="btn btn-outline-primary btn-lg w-100">Flood Reports</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Flood Monitoring System | All Rights Reserved</p>
+    </footer>
+</div>
+{% endblock pageContent %}
