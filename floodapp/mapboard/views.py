@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 from django.shortcuts import render, redirect
-=======
-from django.shortcuts import render, get_object_or_404
->>>>>>> origin
 from django.http import JsonResponse
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
+from django.contrib.auth.decorators import login_required
 from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm
 
@@ -57,13 +54,14 @@ def report_emergency_view(request):
     regions = Region.objects.all()
     return render(request, 'report_emergency.html', {'regions': regions})
 
-<<<<<<< HEAD
-
-#@allowed_users(allowed_roles=['admin'])
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
     events = Event.objects.all()
     return render(request, 'schedule.html', {'events': events})
 
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def add_event(request):
     if request.method == 'POST':
         form = EventForm(request.POST)
@@ -81,7 +79,8 @@ def add_event(request):
         form = EventForm()
     return render(request, 'add_event.html', {'form': form})
 
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def event_list(request):
     events = Event.objects.all()
     data = [{
@@ -92,7 +91,8 @@ def event_list(request):
     } for event in events]
     return JsonResponse(data, safe=False)
     
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def delete_event(request):
     if request.method == 'POST':
         form = DeleteForm(request.POST)
@@ -110,7 +110,8 @@ def delete_event(request):
     return render(request, 'delete_event.html', {'form': form})
 
 
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def update_event(request):
     if request.method == 'POST':
         if 'select_event' in request.POST:
@@ -138,21 +139,3 @@ def update_event(request):
         update_form = None
 
     return render(request, 'update_event.html', {'select_form': select_form, 'update_form': update_form})
-=======
-def historical_data_view(request):
-    station_id = request.GET.get('hzbnr')
-    if not station_id:
-        return render(request, 'error.html', {'message': 'Station ID is required.'})
-
-    # Fetch station metadata
-    station = get_object_or_404(Station, hzbnr=station_id)
-
-    # Fetch measurements
-    measurements = Measurement.objects.filter(station_id=station.id).order_by('timestamp')
-
-    context = {
-        'station': station,
-        'measurements': measurements,
-    }
-    return render(request, 'historical_data.html', context)
->>>>>>> origin
