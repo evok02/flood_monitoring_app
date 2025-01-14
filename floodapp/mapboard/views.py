@@ -7,6 +7,8 @@ from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm
 import logging
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 logger = logging.getLogger('flood_app')
 
 
@@ -58,41 +60,46 @@ def water_level_history(request, region_id):
         logger.info(f'Error fetching water level history for region {region_id}')
         return JsonResponse({'success': False, 'error': str(e)})
 
+@csrf_exempt
 def report_emergency(request):
     if request.method == 'POST':
-        region_id = request.POST.get('region')
-        description = request.POST.get('description')
-        location = request.POST.get('location')
-        latitude = request.POST.get('latitude')
-        longitude = request.POST.get('longitude')
-        urgency_level = request.POST.get('urgency_level')
-
         try:
-            region = Region.objects.get(id=region_id)
-            EmergencyReport.objects.create(
-                region=region,
+            data = json.loads(request.body)
+            logger.info(f"Received report data: {data}")
+
+            # Extract fields
+            description = data.get('description')
+            latitude = data.get('latitude')
+            longitude = data.get('longitude')
+            urgency_level = data.get('urgency_level')
+
+            # Validate inputs
+            if not description or not urgency_level or latitude is None or longitude is None:
+                logger.error("Validation failed: Missing required fields.")
+                return JsonResponse({'success': False, 'error': 'All fields are required.'})
+
+            # Create and save the report without assigning a region
+            report = EmergencyReport.objects.create(
                 description=description,
-                location=location,
-                latitude=latitude,
-                longitude=longitude,
                 urgency_level=urgency_level,
+                latitude=latitude,
+                longitude=longitude
             )
-            # Redirect to the map after successful submission
-            return HttpResponseRedirect(reverse('map'))
+            logger.info(f"Report created successfully with ID: {report.id}")
+
+            return JsonResponse({'success': True})
         except Exception as e:
+            logger.error(f"Error in report_emergency: {e}")
             return JsonResponse({'success': False, 'error': str(e)})
-    else:
-        regions = Region.objects.all()
-        return render(request, 'report_emergency.html', {'regions': regions})
+    return JsonResponse({'success': False, 'error': 'Invalid request method.'})
 
 # Endpoint to return all emergency reports in JSON format
 def get_emergency_reports(request):
-    reports = EmergencyReport.objects.all()
+    reports = EmergencyReport.objects.exclude(latitude__isnull=True, longitude__isnull=True)
 
     data = [
         {
             "id": report.id,
-            "region": report.region.name,
             "description": report.description,
             "latitude": report.latitude,
             "longitude": report.longitude,
@@ -108,7 +115,7 @@ def fetch_emergencies_view(request):
         emergencies = EmergencyReport.objects.select_related('region').all()
         data = [
             {
-                "region": emergency.region.name,
+                "region": emergency.region.name if emergency.region else None,
                 "description": emergency.description,
                 "latitude": emergency.region.latitude,
                 "longitude": emergency.region.longitude,

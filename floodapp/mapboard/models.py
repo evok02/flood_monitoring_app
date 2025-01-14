@@ -62,8 +62,7 @@ class Measurement(models.Model):
         return f"Measurement {self.id} - Station {self.station_id}"
 
 class EmergencyReport(models.Model):
-    # Link to a region
-    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True, blank=True)
     # Description of the emergency
     description = models.TextField()
     # Specific location
@@ -80,7 +79,7 @@ class EmergencyReport(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Report in {self.region.name} - {self.urgency_level}"
+        return f"Report - {self.urgency_level} - {self.timestamp}"
 
 
 class Event(models.Model):
