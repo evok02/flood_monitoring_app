@@ -18,6 +18,9 @@
 
 {% block pageContent %}
     <div class="main-container">
+        <!-- Include CSRF token for POST requests -->
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+
         <!-- Sidebar -->
         <div class="sidebar">
             <label for="region-filter">Filter by Region:</label>
@@ -40,7 +43,7 @@
         <script>
             const austriaGeoJsonUrl = "{% static 'js/austria.geojson' %}";
         </script>
-        <script src="{% static 'js/map.js' %}"></script>
+        <script src="{% static 'js/map.js' %}"></script> <!-- Fixed Path -->
     </div>
 
     <script>
