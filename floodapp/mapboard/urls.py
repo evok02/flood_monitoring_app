@@ -12,5 +12,7 @@ urlpatterns = [
     path('api/events/', views.event_list, name='event_list'),
     path('delete_event/', views.delete_event, name='delete_event'),
     path('update_event/', views.update_event, name='update_event'),
-    path('historical-data/', views.historical_data_view, name='historical_data')
+    path('historical-data/', views.historical_data_view, name='historical_data'),
+    path('historical-data-graph/', views.historical_graph_view, name='historical-data-graph'),
+    path('search/', views.search_location)
 ]
