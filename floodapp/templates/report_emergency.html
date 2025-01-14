@@ -1,50 +1,107 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block headerContent %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report an Emergency</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/report.css' %}">
-{% endblock headerContent %}
-
-
-
-
-{% block pageContent %}
-    <div class="container">
-        <h1>Report an Emergency</h1>
-        <form method="POST" action="{% url 'report-emergency' %}" onsubmit="return showThankYouMessage()">
-            {% csrf_token %}
-            <label for="region">Region:</label>
-            <select name="region" id="region" required>
-                <!-- Options will be populated by JavaScript -->
-            </select>
-
-            <label for="description">Incident Description:</label>
-            <textarea name="description" id="description" rows="4" required></textarea>
-
-            <label for="location">Location of the Incident:</label>
-            <input type="text" name="location" id="location" placeholder="Enter location" required />
-
-            <label for="urgency_level">Urgency Level:</label>
-            <select name="urgency_level" id="urgency_level" required>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-
-            <button type="submit">Submit Report</button>
-        </form>
-    </div>
-    <script src="{% static 'js/report.js' %}"></script>
-    <script>
-        function showThankYouMessage() {
-            alert("Form successfully submitted. Thank you.");
-            return true; // Allow the form to be submitted
-        }
-    </script>
-{% endblock pageContent %}
-
-
+{#{% extends 'base.html' %}#}
+{#{% load static %}#}
+{##}
+{#{% block headerContent %}#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <title>Report an Emergency</title>#}
+{#    <link rel="stylesheet" href="{% static 'css/report.css' %}">#}
+{#{% endblock headerContent %}#}
+{##}
+{#{% block pageContent %}#}
+{#    <div class="container">#}
+{#        <h1>Report an Emergency</h1>#}
+{#        <p>Click on the map to mark the location of the emergency! Fill in the details below:</p>#}
+{#        <form id="emergencyForm" onsubmit="return submitEmergencyReport()">#}
+{#            {% csrf_token %}#}
+{#            <label for="description">Incident Description:</label>#}
+{#            <textarea name="description" id="description" rows="4" required></textarea>#}
+{##}
+{#            <label for="urgency_level">Urgency Level:</label>#}
+{#            <select name="urgency_level" id="urgency_level" required>#}
+{#                <option value="low">Low</option>#}
+{#                <option value="medium">Medium</option>#}
+{#                <option value="high">High</option>#}
+{#            </select>#}
+{##}
+{#            <button type="submit">Submit Report</button>#}
+{#        </form>#}
+{#    </div>#}
+{#    <script>#}
+{#        let selectedCoordinates = null;#}
+{##}
+{#        // Add marker on click#}
+{#map.on('click', function (e) {#}
+{#    const latitude = e.latlng.lat;#}
+{#    const longitude = e.latlng.lng;#}
+{##}
+{#    // Create a marker at the clicked location#}
+{#    const marker = L.marker([latitude, longitude], { draggable: true }).addTo(map);#}
+{##}
+{#    // Create a custom popup with a form#}
+{#    const popupContent = `#}
+{#        <form id="emergency-form">#}
+{#            <label for="description">Description:</label><br>#}
+{#            <textarea id="description" name="description" rows="2" required></textarea><br>#}
+{#            <label for="urgency">Urgency Level:</label><br>#}
+{#            <select id="urgency" name="urgency" required>#}
+{#                <option value="low">Low</option>#}
+{#                <option value="medium">Medium</option>#}
+{#                <option value="high">High</option>#}
+{#            </select><br><br>#}
+{#            <button type="button" id="submit-report">Submit</button>#}
+{#        </form>#}
+{#    `;#}
+{##}
+{#    marker.bindPopup(popupContent).openPopup();#}
+{##}
+{#    // Handle form submission#}
+{#    marker.on('popupopen', () => {#}
+{#        document.getElementById('submit-report').addEventListener('click', () => {#}
+{#            const description = document.getElementById('description').value;#}
+{#            const urgency = document.getElementById('urgency').value;#}
+{##}
+{#            // Validate inputs#}
+{#            if (!description || !['low', 'medium', 'high'].includes(urgency.toLowerCase())) {#}
+{#                alert('Please provide valid inputs.');#}
+{#                return;#}
+{#            }#}
+{##}
+{#            // Send data to the backend#}
+{#            fetch('/map/report-emergency/', {#}
+{#                method: 'POST',#}
+{#                headers: {#}
+{#                    'Content-Type': 'application/json',#}
+{#                    'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value#}
+{#                },#}
+{#                body: JSON.stringify({#}
+{#                    description: description,#}
+{#                    urgency_level: urgency.toLowerCase(),#}
+{#                    latitude: latitude,#}
+{#                    longitude: longitude#}
+{#                })#}
+{#            })#}
+{#            .then(response => response.json())#}
+{#            .then(data => {#}
+{#                if (data.success) {#}
+{#                    alert('Report submitted successfully!');#}
+{#                    marker.closePopup();#}
+{#                    marker.bindPopup(`#}
+{#                        <b>Description:</b> ${description}<br>#}
+{#                        <b>Urgency:</b> ${urgency}#}
+{#                    `).openPopup();#}
+{#                } else {#}
+{#                    alert('Error submitting report!');#}
+{#                    map.removeLayer(marker);#}
+{#                }#}
+{#            })#}
+{#            .catch(error => {#}
+{#                console.error('Error:', error);#}
+{#                alert('Error submitting report!');#}
+{#                map.removeLayer(marker);#}
+{#            });#}
+{#        });#}
+{#    });#}
+{#});#}
+{#    </script>#}
+{#{% endblock pageContent %}#}
