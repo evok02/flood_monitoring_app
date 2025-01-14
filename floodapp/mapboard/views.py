@@ -65,7 +65,6 @@ def report_emergency_view(request):
     regions = Region.objects.all()
     return render(request, 'report_emergency.html', {'regions': regions})
 
-<<<<<<< HEAD
 
 #@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
@@ -151,21 +150,3 @@ def update_event(request):
         update_form = None
 
     return render(request, 'update_event.html', {'select_form': select_form, 'update_form': update_form})
-=======
-def historical_data_view(request):
-    station_id = request.GET.get('hzbnr')
-    if not station_id:
-        return render(request, 'error.html', {'message': 'Station ID is required.'})
-
-    # Fetch station metadata
-    station = get_object_or_404(Station, hzbnr=station_id)
-
-    # Fetch measurements
-    measurements = Measurement.objects.filter(station_id=station.id).order_by('timestamp')
-
-    context = {
-        'station': station,
-        'measurements': measurements,
-    }
-    return render(request, 'historical_data.html', context)
->>>>>>> origin
