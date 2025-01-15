@@ -13,6 +13,8 @@ logger = logging.getLogger('flood_app')
 import matplotlib 
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.patheffects as patheffects
+import matplotlib.dates as mdates
 import pandas as pd
 import io
 import urllib, base64
@@ -244,16 +246,30 @@ def historical_graph_view(request):
                 wert2 = list(map(lambda d: d['wert'], data2))
                 dates2 = list(map(lambda d: d['timestamp'], data2))
 
-                p_bcg = r'.\floodapp\static\images\graph_background1.webp'
 
                 # Line plot
-                img = plt.imread(p_bcg)
                 fig, ax = plt.subplots()
-                ax.imshow(img, extent=[min(dates1 + dates2), max(dates1 + dates2), min(wert1 + wert2), max(wert1 + wert2)], aspect='auto', zorder=0)
-                ax.plot(dates1, wert1, 'bo-', label='Location 1', color='cyan', zorder=1)
-                ax.plot(dates2, wert2, 'ro-', label='Location 2', color='magenta', zorder=1)
-                ax.set_xlabel('Date')
-                ax.set_ylabel('Wert')
+                ax.plot(dates1, wert1, 'bo-', label=location1, color='#007BFF', zorder=1)
+                ax.plot(dates2, wert2, 'ro-', label=f'{location2}', color='#FF8800', zorder=1)
+                ax.set_facecolor("#1E2A38")
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7)
+                for line in ax.get_lines():
+                    line.set_path_effects([
+                        patheffects.withStroke(linewidth=4, foreground="black", alpha=0.3)
+                    ])
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_xlabel('Date', color='white')
+                ax.set_ylabel('Wert', color='white')
+                ax.tick_params(axis='x', colors='white') 
+                ax.tick_params(axis='y', colors='white')
+
+                locator = mdates.AutoDateLocator()
+                formatter = mdates.AutoDateFormatter(locator)
+                ax.xaxis.set_major_locator(locator)
+                ax.xaxis.set_major_formatter(formatter)
+
+                plt.xticks(rotation=45) 
+
                 ax.legend()
 
                 buf = io.BytesIO()
@@ -264,9 +280,18 @@ def historical_graph_view(request):
 
                  # Box plot
                 fig, ax = plt.subplots()
-                ax.boxplot(wert1)
-                ax.set_title(f'Box Plot of Wert - {location1}')
-                ax.set_ylabel('Wert')
+                ax.boxplot(wert1,
+                    patch_artist=True,
+                    boxprops=dict(facecolor='#007BFF', color='white'),
+                    whiskerprops=dict(color='#FF8800', linewidth=1.5), 
+                    capprops=dict(color='#FF8800', linewidth=2),  
+                    flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8), 
+                    medianprops=dict(color='white', linewidth=2))  
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_facecolor("#1E2A38")
+                ax.set_title(f'Box Plot of Wert - {location1}', color='white')
+                ax.set_ylabel('Wert', color='white')
+                ax.tick_params(axis='y', colors='white')
 
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png')
@@ -276,9 +301,18 @@ def historical_graph_view(request):
 
                 # second box plot
                 fig, ax = plt.subplots()
-                ax.boxplot(wert2)
-                ax.set_title(f'Box Plot of Wert - {location2}')
-                ax.set_ylabel('Wert')
+                ax.boxplot(wert2,
+                    patch_artist=True, 
+                    boxprops=dict(facecolor='#007BFF', color='white'), 
+                    whiskerprops=dict(color='#FF8800', linewidth=1.5),  
+                    capprops=dict(color='#FF8800', linewidth=2),  
+                    flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8), 
+                    medianprops=dict(color='white', linewidth=2))  
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_facecolor("#1E2A38")
+                ax.set_title(f'Box Plot of Wert - {location2}', color='white')
+                ax.set_ylabel('Wert', color='white')
+                ax.tick_params(axis='y', colors='white')
 
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png')
@@ -290,9 +324,13 @@ def historical_graph_view(request):
                 mean1 = sum(wert1) / len(wert1) if wert1 else 0
                 mean2 = sum(wert2) / len(wert2) if wert2 else 0
                 fig, ax = plt.subplots()
-                ax.bar([location1, location2], [mean1, mean2], color=['cyan', 'magenta'])
-                ax.set_title('Comparison of Mean Values')
-                ax.set_ylabel('Mean Wert')
+                ax.bar([location1, location2], [mean1, mean2], color=['#007BFF', '#FF8800'])
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_facecolor("#1E2A38")
+                ax.set_title('Comparison of Mean Values', color='white')
+                ax.set_ylabel('Mean Wert', color='white')
+                ax.tick_params(axis='x', colors='white') 
+                ax.tick_params(axis='y', colors='white')
 
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png')
@@ -307,16 +345,31 @@ def historical_graph_view(request):
                 data = Measurement.objects.filter(timestamp__date__range=(start_date, end_date), station_id=st_id).values('timestamp', 'wert')
                 wert = list(map(lambda d: d['wert'], data))
                 dates = list(map(lambda d: d['timestamp'], data))
-                p_bcg = r'.\floodapp\static\images\graph_background2.webp'
+                p_bcg = r'floodapp/static/images/graph_background2.webp'
 
                 # Line plot
+                plt.figure(figsize=(12,8))
                 img = plt.imread(p_bcg)
                 fig, ax = plt.subplots()
-                ax.imshow(img, extent=[min(dates), max(dates), min(wert), max(wert)], aspect='auto', zorder=0)
-                ax.plot(dates, wert, 'bo-', label='wert', color='cyan', zorder=1)
-                ax.set_xlabel('Date')
-                ax.set_ylabel('Wert')
-
+                # ax.imshow(extent=[min(dates), max(dates), min(wert), max(wert)], aspect='auto', zorder=0)
+                ax.plot(dates, wert, 'bo-', label=location, color='#007BFF', zorder=1)
+                ax.set_facecolor("#1E2A38")
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7)
+                for line in ax.get_lines():
+                    line.set_path_effects([
+                        patheffects.withStroke(linewidth=4, foreground="black", alpha=0.3)
+                    ])
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_xlabel('Date', color='white')
+                ax.set_ylabel('Wert', color='white')
+                ax.tick_params(axis='x', colors='white') 
+                ax.tick_params(axis='y', colors='white')
+                locator = mdates.AutoDateLocator()
+                formatter = mdates.AutoDateFormatter(locator)
+                ax.xaxis.set_major_locator(locator)
+                ax.xaxis.set_major_formatter(formatter)
+                plt.xticks(rotation=45)
+                plt.legend()
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png')
                 buf.seek(0)
@@ -325,9 +378,18 @@ def historical_graph_view(request):
 
                 # Box plot
                 fig, ax = plt.subplots()
-                ax.boxplot(wert1 if len(locations) == 2 else wert)
-                ax.set_title('Box Plot of Wert')
-                ax.set_ylabel('Wert')
+                ax.boxplot(wert1 if len(locations) == 2 else wert,
+                    patch_artist=True, 
+                    boxprops=dict(facecolor='#007BFF', color='white'), 
+                    whiskerprops=dict(color='#FF8800', linewidth=1.5), 
+                    capprops=dict(color='#FF8800', linewidth=2),  
+                    flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8),
+                    medianprops=dict(color='white', linewidth=2)) 
+                fig.patch.set_facecolor('#2A3B4C')
+                ax.set_facecolor("#1E2A38")
+                ax.set_title(f'Box Plot of {location}', color='white')
+                ax.set_ylabel('Wert', color='white')
+                ax.tick_params(axis='y', colors='white')
 
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png')
