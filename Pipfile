@@ -11,7 +11,8 @@ celery = "*"
 redis = "*"
 requests = "*"
 pytest = "*"
-
+pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 
