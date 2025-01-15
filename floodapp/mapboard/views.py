@@ -5,6 +5,7 @@ from django.db.models import Max
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
+from django.contrib.auth.decorators import login_required
 from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm, GraphParametersForm
 import logging
@@ -69,53 +70,19 @@ def water_level_history(request, region_id):
         logger.info(f'Error fetching water level history for region {region_id}')
         return JsonResponse({'success': False, 'error': str(e)})
 
-def report_emergency(request):
-    if request.method == 'POST':
-        region_id = request.POST.get('region')
-        description = request.POST.get('description')
-        location = request.POST.get('location')
-        latitude = request.POST.get('latitude')
-        longitude = request.POST.get('longitude')
-        urgency_level = request.POST.get('urgency_level')
 
-        try:
-            region = Region.objects.get(id=region_id)
-            EmergencyReport.objects.create(
-                region=region,
-                description=description,
-                location=location,
-                latitude=latitude,
-                longitude=longitude,
-                urgency_level=urgency_level,
-            )
-            # Redirect to the map after successful submission
-            return HttpResponseRedirect(reverse('map'))
-        except Exception as e:
-            return JsonResponse({'success': False, 'error': str(e)})
-    else:
-        regions = Region.objects.all()
-        return render(request, 'report_emergency.html', {'regions': regions})
-    
-def fetch_emergencies_view(request):
-        emergencies = EmergencyReport.objects.select_related('region').all()
-        data = [
-            {
-                "region": emergency.region.name,
-                "description": emergency.description,
-                "latitude": emergency.region.latitude,
-                "longitude": emergency.region.longitude,
-                "location": emergency.location,
-                "urgency_level": emergency.urgency_level,
-            }
-            for emergency in emergencies
-        ]
-        return JsonResponse(data, safe=False)
+def report_emergency_view(request):
+    regions = Region.objects.all()
+    return render(request, 'report_emergency.html', {'regions': regions})
+
 
 #@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
     events = Event.objects.all()
     return render(request, 'schedule.html', {'events': events})
 
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def add_event(request):
     if request.method == 'POST':
         form = EventForm(request.POST)
@@ -133,7 +100,8 @@ def add_event(request):
         form = EventForm()
     return render(request, 'add_event.html', {'form': form})
 
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def event_list(request):
     events = Event.objects.all()
     data = [{
@@ -144,7 +112,8 @@ def event_list(request):
     } for event in events]
     return JsonResponse(data, safe=False)
     
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def delete_event(request):
     if request.method == 'POST':
         form = DeleteForm(request.POST)
@@ -162,7 +131,8 @@ def delete_event(request):
     return render(request, 'delete_event.html', {'form': form})
 
 
-
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def update_event(request):
     if request.method == 'POST':
         if 'select_event' in request.POST:
