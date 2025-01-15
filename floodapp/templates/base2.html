@@ -64,6 +64,9 @@
                     <li class="nav-item {% if request.resolver_match.url_name == 'task_scheduling_page' %}active{% endif %}">
                       <a class="nav-link" href="{% url 'task_scheduling_page' %}">Task Schedule</a>
                     </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'historical-data-graph' %}active{% endif %}">
+                      <a class="nav-link" href="{% url 'historical-data-graph' %}">Historical Data</a>
+                    </li>
                     
                  
                   <li class="nav-item {% if request.resolver_match.url_name == 'logout' %}active{% endif %}">

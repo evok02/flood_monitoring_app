@@ -179,7 +179,7 @@ def historical_data_view(request):
     }
     return render(request, 'historical_data.html', context)
 
-
+@login_required
 def historical_graph_view(request):
     if request.method == 'POST':
         form = GraphParametersForm(request.POST)

@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 
 {% block headerContent %}
@@ -14,19 +14,20 @@
 {% endblock headerContent %}
 
 {% block pageContent %}
-<h1>Historical Data</h1>
-    <h5>Location:</h5>
+<div class="container" style="max-width: 700px; margin: 0 auto;">
+    <h1 class="text-center" style="margin-top: 40px;">Historical Data</h1>
+    <h5 class="text-center" style="margin-right: 1000px; margin-top: 20px;" >Location:</h5>
     <form method="post" id="location-form">
         {% csrf_token %}
         <div id="search-fields">
             <div class="autocomplete-container">
                 <div id="autocomplete-1" class="autocomplete">
-                    <input class="autocomplete-input" name="location" />
+                    <input class="autocomplete-input form-control" name="location" />
                     <ul class="autocomplete-result-list"></ul>
                 </div>
             </div>
         </div>
-        <button type="button" id="add-location-btn" class="btn btn-secondary">Add Location</button>
+        <button type="button" id="add-location-btn" class="btn btn-secondary d-block mx-auto" style="margin-top: 15px; ">Add Second Location</button>
         {% for field in form %}
             {% if field.name != 'location' %}
                 <div class="form-group">
@@ -35,23 +36,23 @@
             {% endif %}
         {% endfor %}
         <div class="quote_btn-container">
-            <button type="submit" class="quote_btn">Generate</button>
+            <button type="submit" class="quote_btn btn btn-primary d-block mx-auto">Generate Graphs</button>
         </div>
     </form>
 
     {% if line_plot %}
-        <div class="center-container">
-            <h2>Line Plot</h2>
-            <img src="data:image/png;base64,{{ line_plot }}" alt="Line Plot">
+        <div class="center-container" style="margin-top: 15px;">
+            <h2 class="text-center">Line Plot</h2>
+            <img src="data:image/png;base64,{{ line_plot }}" alt="Line Plot" class="img-fluid mx-auto d-block">
         </div>
     {% endif %}
 
     {% if box_plots %}
-    <div class="center-container">
-        <h2>Box Plots</h2>
+    <div class="center-container" style="margin-top: 15px;">
+        <h2 class="text-center">Box Plots</h2>
         {% for box_plot in box_plots %}
-            <div>
-                <img src="data:image/png;base64,{{ box_plot }}" alt="Box Plot">
+            <div class="text-center">
+                <img src="data:image/png;base64,{{ box_plot }}" alt="Box Plot" class="img-fluid mx-auto d-block">
             </div>
         {% endfor %}
     </div>
@@ -59,14 +60,40 @@
 
     {% if bar_plot %}
     <div class="center-container">
-        <h2>Bar Plot</h2>
-        <img src="data:image/png;base64,{{ bar_plot }}" alt="Bar Plot">
+        <h2 class="text-center">Bar Plot</h2>
+        <img src="data:image/png;base64,{{ bar_plot }}" alt="Bar Plot" class="img-fluid mx-auto d-block">
     </div>
     {% endif %}
+</div>
 
-    <script src="https://unpkg.com/@trevoreyre/autocomplete-js"></script>
-    <script>
-        let counter = 1;
+<script src="https://unpkg.com/@trevoreyre/autocomplete-js"></script>
+<script>
+    let counter = 1;
+
+    new Autocomplete(`#autocomplete-${counter}`, {
+        search: input => {
+            const url = '/map/search/?location=' + input;
+            return new Promise(resolve => {
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => resolve(data.data));
+            });
+        }
+    });
+
+    document.getElementById('add-location-btn').addEventListener('click', () => {
+        counter++;
+
+        const newAutocomplete = document.createElement('div');
+        newAutocomplete.className = 'autocomplete-container';
+        newAutocomplete.innerHTML = `
+            <div id="autocomplete-${counter}" class="autocomplete">
+                <input class="autocomplete-input form-control" name="location-${counter}" />
+                <ul class="autocomplete-result-list"></ul>
+            </div>
+        `;
+
+        document.getElementById('search-fields').appendChild(newAutocomplete);
 
         new Autocomplete(`#autocomplete-${counter}`, {
             search: input => {
@@ -78,32 +105,6 @@
                 });
             }
         });
-
-        document.getElementById('add-location-btn').addEventListener('click', () => {
-            counter++;
-
-            const newAutocomplete = document.createElement('div');
-            newAutocomplete.className = 'autocomplete-container';
-            newAutocomplete.innerHTML = `
-                <div id="autocomplete-${counter}" class="autocomplete">
-                    <input class="autocomplete-input" name="location-${counter}" />
-                    <ul class="autocomplete-result-list"></ul>
-                </div>
-            `;
-
-            document.getElementById('search-fields').appendChild(newAutocomplete);
-
-            new Autocomplete(`#autocomplete-${counter}`, {
-                search: input => {
-                    const url = '/map/search/?location=' + input;
-                    return new Promise(resolve => {
-                        fetch(url)
-                            .then(response => response.json())
-                            .then(data => resolve(data.data));
-                    });
-                }
-            });
-        });
-    </script>
+    });
+</script>
 {% endblock pageContent %}
-

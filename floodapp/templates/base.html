@@ -69,6 +69,9 @@
                     <li class="nav-item {% if request.resolver_match.url_name == 'admin_dashboard' %}active{% endif %}">
                       <a class="nav-link" href="{% url 'task_scheduling_page' %}">Task Schedule</a>
                     </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'historical-data-graph' %}active{% endif %}">
+                      <a class="nav-link" href="{% url 'historical-data-graph' %}">Historical Data</a>
+                    </li>
                  
                   <li class="nav-item {% if request.resolver_match.url_name == 'logout' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
@@ -80,11 +83,10 @@
                 {% endif %}
                 </ul>
                 <div class="quote_btn-container">
-                  {% if user.is_authenticated %}
+                  
                   <a href="{% url 'report-emergency' %}" class="quote_btn {% if request.resolver_match.url_name == 'report-emergency' %}quote_btn_active{% endif %}">
                     Write Report
                   </a>
-                  {% endif %}
                 </div>
               </div>
             
