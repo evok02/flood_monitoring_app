@@ -19,7 +19,6 @@
   table {
     border-collapse: collapse;
     border: 2px solid #ccc; 
-    margin-bottom: 20px;
   }
   
   th, td {
@@ -36,20 +35,31 @@
 body {
     font-family: Arial, sans-serif;
     font-weight: lighter;
-    margin: 20px;
   }
   
   #calendar {
+    max-width: 80%; /* Adjust this value to control the width */
+    max-height: 70vh; /* Adjust this value to control the height */
+    margin: 20px auto; /* Center the calendar horizontally and add spacing from the navbar */
     background-color: #fafafa;
-    margin-bottom: 20px;
-    border: 2px solid #ccc; 
-    margin-bottom: 20px;
-    margin-top: auto;
-  }
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(167, 13, 13, 0.1); /* Optional: Adds a subtle shadow */
+    padding: 10px; /* Optional: Adds inner spacing */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    overflow: hidden; /* Ensures content doesn't spill out */
+}
+
   
   table {
-    border-collapse: collapse;
-    width: 100%;
+    max-width: 80%; /* Adjust this value to control the width */
+    max-height: 70vh; /* Adjust this value to control the height */
+    margin: 20px auto; /* Center the calendar horizontally and add spacing from the navbar */
+    background-color: #fafafa;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    padding: 10px; /* Optional: Adds inner spacing */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    overflow: hidden; /* Ensures content doesn't spill out */
   }
   
   th, td {

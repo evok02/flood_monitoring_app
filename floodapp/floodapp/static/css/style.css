@@ -257,7 +257,8 @@ a:focus {
 }
 
 .custom_nav-container {
-  padding: 0;
+  height: 40px; /* Fixed height for consistency */
+  box-sizing: border-box;
 }
 
 .custom_nav-container .navbar-nav {

@@ -22,7 +22,7 @@ import os
 
 
 
-
+@login_required
 def water_levels_api(request):
     logger.info('Fetching water levels from database.')
     levels = WaterLevel.objects.select_related('region').all()

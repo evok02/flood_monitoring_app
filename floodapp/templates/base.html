@@ -61,10 +61,11 @@
                   <li class="nav-item {% if request.resolver_match.url_name == 'about' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
                   </li>
+                  {% if user.is_authenticated %}
                   <li class="nav-item {% if request.resolver_match.url_name == 'map' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'map' %}">View Map</a>
                   </li>
-                  {% if user.is_authenticated %}
+                  
                     <li class="nav-item {% if request.resolver_match.url_name == 'admin_dashboard' %}active{% endif %}">
                       <a class="nav-link" href="{% url 'task_scheduling_page' %}">Task Schedule</a>
                     </li>
@@ -79,9 +80,11 @@
                 {% endif %}
                 </ul>
                 <div class="quote_btn-container">
+                  {% if user.is_authenticated %}
                   <a href="{% url 'report-emergency' %}" class="quote_btn {% if request.resolver_match.url_name == 'report-emergency' %}quote_btn_active{% endif %}">
                     Write Report
                   </a>
+                  {% endif %}
                 </div>
               </div>
             
