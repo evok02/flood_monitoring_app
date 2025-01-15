@@ -21,6 +21,7 @@ class WaterLevel(models.Model):
     location_lon = models.FloatField(default=0.0)
 
 class Station(models.Model):
+    id = models.IntegerField(primary_key=True)
     hzbnr = models.IntegerField(null=True, blank=True, verbose_name="HZB Number")
     messstelle = models.CharField(max_length=255, null=True, blank=True, verbose_name="Measurement Point")
     dbmsnr = models.IntegerField(null=True, blank=True, verbose_name="DBMS Number")
@@ -43,12 +44,9 @@ class Station(models.Model):
 
 
 class Measurement(models.Model):
-    station = models.ForeignKey(
-        'Station', 
-        on_delete=models.CASCADE, 
-        related_name='measurements',
-        db_column='station_id'
-    )
+    id = models.IntegerField(primary_key=True)
+    # station_id = models.ForeignKey(Station, on_delete=models.CASCADE)
+    station_id = models.IntegerField()
     timestamp = models.DateTimeField()
     wert = models.DecimalField(max_digits=10, decimal_places=3, null=True, blank=True)
     einheit = models.CharField(max_length=50, null=True, blank=True)

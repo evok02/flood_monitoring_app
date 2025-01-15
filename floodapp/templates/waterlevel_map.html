@@ -14,6 +14,7 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
     <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
 {% endblock headerContent %}
 
 
@@ -37,7 +38,7 @@
         <div id="map" class="map-container"></div>
         <script>
             const austriaGeoJsonUrl = "{% static 'js/austria.geojson' %}";
-            const waterLevelGeoJsonUrl = "{% static 'js/rivers.geojson' %}";
+            const waterLevelGeoJsonUrl = "{% static 'js/simplified_rivers.geojson' %}";
         </script>
         <script src="{% static 'js/water_level_map.js' %}"></script>
         <script>

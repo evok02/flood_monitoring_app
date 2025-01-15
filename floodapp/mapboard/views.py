@@ -1,14 +1,24 @@
 
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse, HttpResponseRedirect
+from django.db.models import Max
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
 from .models import Event
-from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm
+from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm, GraphParametersForm
 import logging
 from django.urls import reverse
 logger = logging.getLogger('flood_app')
+import matplotlib 
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import pandas as pd
+import io
+import urllib, base64
+import os
+
+
 
 
 def water_levels_api(request):
@@ -180,6 +190,7 @@ def update_event(request):
         update_form = None
 
     return render(request, 'update_event.html', {'select_form': select_form, 'update_form': update_form})
+
 def historical_data_view(request):
     station_id = request.GET.get('hzbnr')
     if not station_id:
@@ -199,3 +210,146 @@ def historical_data_view(request):
         'measurements': measurements,
     }
     return render(request, 'historical_data.html', context)
+
+
+def historical_graph_view(request):
+    if request.method == 'POST':
+        form = GraphParametersForm(request.POST)
+        if form.is_valid():
+            locations = []
+            if form.cleaned_data['location']:
+                locations.append(form.cleaned_data['location'])
+            
+            for key in request.POST.keys():
+                if key.startswith('location-') and request.POST[key].strip():
+                    locations.append(request.POST[key].strip())
+            
+            start_date = form.cleaned_data['start_date']
+            end_date = form.cleaned_data['end_date']
+
+            box_plot_uris = []
+
+            if len(locations) == 2:
+                location1, location2 = locations
+
+                max_agg1 = Station.objects.filter(messstelle=location1).values('id').aggregate(max_num=Max('id'))
+                st_id1 = max_agg1.get('max_num', 1)
+                data1 = Measurement.objects.filter(timestamp__date__range=(start_date, end_date), station_id=st_id1).values('timestamp', 'wert')
+                wert1 = list(map(lambda d: d['wert'], data1))
+                dates1 = list(map(lambda d: d['timestamp'], data1))
+
+                max_agg2 = Station.objects.filter(messstelle=location2).values('id').aggregate(max_num=Max('id'))
+                st_id2 = max_agg2.get('max_num', 1)
+                data2 = Measurement.objects.filter(timestamp__date__range=(start_date, end_date), station_id=st_id2).values('timestamp', 'wert')
+                wert2 = list(map(lambda d: d['wert'], data2))
+                dates2 = list(map(lambda d: d['timestamp'], data2))
+
+                p_bcg = r'.\floodapp\static\images\graph_background1.webp'
+
+                # Line plot
+                img = plt.imread(p_bcg)
+                fig, ax = plt.subplots()
+                ax.imshow(img, extent=[min(dates1 + dates2), max(dates1 + dates2), min(wert1 + wert2), max(wert1 + wert2)], aspect='auto', zorder=0)
+                ax.plot(dates1, wert1, 'bo-', label='Location 1', color='cyan', zorder=1)
+                ax.plot(dates2, wert2, 'ro-', label='Location 2', color='magenta', zorder=1)
+                ax.set_xlabel('Date')
+                ax.set_ylabel('Wert')
+                ax.legend()
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                line_plot_uri = urllib.parse.quote(string)
+
+                 # Box plot
+                fig, ax = plt.subplots()
+                ax.boxplot(wert1)
+                ax.set_title(f'Box Plot of Wert - {location1}')
+                ax.set_ylabel('Wert')
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                box_plot_uris.append(urllib.parse.quote(string))
+
+                # second box plot
+                fig, ax = plt.subplots()
+                ax.boxplot(wert2)
+                ax.set_title(f'Box Plot of Wert - {location2}')
+                ax.set_ylabel('Wert')
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                box_plot_uris.append(urllib.parse.quote(string))
+
+                # Bar plot
+                mean1 = sum(wert1) / len(wert1) if wert1 else 0
+                mean2 = sum(wert2) / len(wert2) if wert2 else 0
+                fig, ax = plt.subplots()
+                ax.bar([location1, location2], [mean1, mean2], color=['cyan', 'magenta'])
+                ax.set_title('Comparison of Mean Values')
+                ax.set_ylabel('Mean Wert')
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                bar_plot_uri = urllib.parse.quote(string)
+
+            else:
+                location = locations[0]
+                max_agg = Station.objects.filter(messstelle=location).values('id').aggregate(max_num=Max('id'))
+                st_id = max_agg.get('max_num', 1)
+                data = Measurement.objects.filter(timestamp__date__range=(start_date, end_date), station_id=st_id).values('timestamp', 'wert')
+                wert = list(map(lambda d: d['wert'], data))
+                dates = list(map(lambda d: d['timestamp'], data))
+                p_bcg = r'.\floodapp\static\images\graph_background2.webp'
+
+                # Line plot
+                img = plt.imread(p_bcg)
+                fig, ax = plt.subplots()
+                ax.imshow(img, extent=[min(dates), max(dates), min(wert), max(wert)], aspect='auto', zorder=0)
+                ax.plot(dates, wert, 'bo-', label='wert', color='cyan', zorder=1)
+                ax.set_xlabel('Date')
+                ax.set_ylabel('Wert')
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                line_plot_uri = urllib.parse.quote(string)
+
+                # Box plot
+                fig, ax = plt.subplots()
+                ax.boxplot(wert1 if len(locations) == 2 else wert)
+                ax.set_title('Box Plot of Wert')
+                ax.set_ylabel('Wert')
+
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                string = base64.b64encode(buf.read())
+                box_plot_uris.append(urllib.parse.quote(string))
+                return render(request, 'historical_data_graph.html', {'form': form, 'line_plot': line_plot_uri, 'box_plots': box_plot_uris})
+
+            return render(request, 'historical_data_graph.html', {'form': form, 'line_plot': line_plot_uri, 'box_plots': box_plot_uris, 'bar_plot': bar_plot_uri})
+
+    else:
+        form = GraphParametersForm()
+    return render(request, 'historical_data_graph.html', {'form': form})
+
+
+
+def search_location(request):
+    location = request.GET.get('location')
+    payload = []
+    if location:
+        locs = Station.objects.filter(messstelle__icontains = location)
+        for loc in locs:
+            payload.append(loc.messstelle)
+
+    return JsonResponse({'status': 200, 'data': payload})
