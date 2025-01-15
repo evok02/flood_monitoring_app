@@ -34,6 +34,31 @@ body {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+.legend {
+    margin-top: 20px;
+}
+
+.legend h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.legend-dot.red {
+    background-color: red;
+}
+
+.legend-dot.blue {
+    background-color: blue;
+}
 
 .map-container {
     flex-grow: 1;

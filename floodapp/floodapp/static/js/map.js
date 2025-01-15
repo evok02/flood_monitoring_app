@@ -56,22 +56,28 @@ fetch(austriaGeoJsonUrl)
 const regions = {
     vienna: { lat: 48.2082, lon: 16.3738, water_level: 2.3, risk: 'low' },
     graz: { lat: 47.0707, lon: 15.4395, water_level: 3.8, risk: 'medium' },
-    salzburg: { lat: 47.8095, lon: 13.055, water_level: 5.2, risk: 'high' }
+    salzburg: { lat: 47.8095, lon: 13.055, water_level: 5.2, risk: 'high' },
+    innsbruck: { lat: 47.2692, lon: 11.4041, water_level: 3.5, risk: 'medium' },
+    klagenfurt: { lat: 46.6368, lon: 14.3122, water_level: 2.9, risk: 'low' },
+    stpoelten: { lat: 48.2038, lon: 15.6267, water_level: 3.2, risk: 'medium' },
+    bregenz: { lat: 47.5031, lon: 9.7471, water_level: 4.0, risk: 'medium' },
+    eisenstadt: { lat: 47.8457, lon: 16.5338, water_level: 2.7, risk: 'low' },
+    krems: { lat: 48.4100, lon: 15.6014, water_level: 3.0, risk: 'low' }
 };
 
-Object.keys(regions).forEach(regionKey => {
-    const region = regions[regionKey];
-    const color = region.risk === 'high' ? 'red' : region.risk === 'medium' ? 'orange' : 'green';
+// Object.keys(regions).forEach(regionKey => {
+//     const region = regions[regionKey];
+//     const color = region.risk === 'high' ? 'red' : region.risk === 'medium' ? 'orange' : 'green';
 
-    L.circleMarker([region.lat, region.lon], {
-        radius: 8,
-        fillColor: color,
-        color: '#000',
-        weight: 1,
-        fillOpacity: 0.8
-    }).addTo(map)
-      .bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
-});
+//     L.circleMarker([region.lat, region.lon], {
+//         radius: 8,
+//         fillColor: color,
+//         color: '#000',
+//         weight: 1,
+//         fillOpacity: 0.8
+//     }).addTo(map)
+//       .bindPopup(`<b>${regionKey.toUpperCase()}</b><br>Water Level: ${region.water_level} m<br>Risk: ${region.risk}`);
+// });
 
 document.getElementById('region-filter').addEventListener('change', function (e) {
     const selectedRegion = e.target.value;
