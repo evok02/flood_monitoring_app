@@ -1,4 +1,3 @@
-
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse, HttpResponseRedirect
 from django.db.models import Max
@@ -10,6 +9,8 @@ from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm, GraphParametersForm
 import logging
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 logger = logging.getLogger('flood_app')
 import matplotlib 
 matplotlib.use('Agg')
@@ -72,14 +73,73 @@ def water_level_history(request, region_id):
         logger.info(f'Error fetching water level history for region {region_id}')
         return JsonResponse({'success': False, 'error': str(e)})
 
+@csrf_exempt
+def report_emergency(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            logger.info(f"Received report data: {data}")
 
-def report_emergency_view(request):
-    regions = Region.objects.all()
-    return render(request, 'report_emergency.html', {'regions': regions})
+            # Extract fields
+            description = data.get('description')
+            latitude = data.get('latitude')
+            longitude = data.get('longitude')
+            urgency_level = data.get('urgency_level')
 
+            # Validate inputs
+            if not description or not urgency_level or latitude is None or longitude is None:
+                logger.error("Validation failed: Missing required fields.")
+                return JsonResponse({'success': False, 'error': 'All fields are required.'})
 
-@login_required
-@allowed_users(allowed_roles=['admin'])
+            # Create and save the report without assigning a region
+            report = EmergencyReport.objects.create(
+                description=description,
+                urgency_level=urgency_level,
+                latitude=latitude,
+                longitude=longitude
+            )
+            logger.info(f"Report created successfully with ID: {report.id}")
+
+            return JsonResponse({'success': True})
+        except Exception as e:
+            logger.error(f"Error in report_emergency: {e}")
+            return JsonResponse({'success': False, 'error': str(e)})
+    return JsonResponse({'success': False, 'error': 'Invalid request method.'})
+
+# Endpoint to return all emergency reports in JSON format
+def get_emergency_reports(request):
+    reports = EmergencyReport.objects.exclude(latitude__isnull=True, longitude__isnull=True)
+
+    data = [
+        {
+            "id": report.id,
+            "description": report.description,
+            "latitude": report.latitude,
+            "longitude": report.longitude,
+            "urgency_level": report.urgency_level,
+            "timestamp": report.timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        for report in reports
+    ]
+
+    return JsonResponse(data, safe=False)
+
+def fetch_emergencies_view(request):
+        emergencies = EmergencyReport.objects.select_related('region').all()
+        data = [
+            {
+                "region": emergency.region.name if emergency.region else None,
+                "description": emergency.description,
+                "latitude": emergency.region.latitude,
+                "longitude": emergency.region.longitude,
+                "location": emergency.location,
+                "urgency_level": emergency.urgency_level,
+            }
+            for emergency in emergencies
+        ]
+        return JsonResponse(data, safe=False)
+
+#@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
     events = Event.objects.all()
     return render(request, 'schedule.html', {'events': events})
