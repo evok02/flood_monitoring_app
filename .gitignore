@@ -13,3 +13,27 @@ __pycache__/
 *$py.class
 
 **/*.log
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+
+# IDE-related
+.idea/
+.vscode/
