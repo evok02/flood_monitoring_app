@@ -288,6 +288,7 @@ def historical_graph_view(request):
                     flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8), 
                     medianprops=dict(color='white', linewidth=2))  
                 fig.patch.set_facecolor('#2A3B4C')
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7)
                 ax.set_facecolor("#1E2A38")
                 ax.set_title(f'Box Plot of Wert - {location1}', color='white')
                 ax.set_ylabel('Wert', color='white')
@@ -309,6 +310,7 @@ def historical_graph_view(request):
                     flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8), 
                     medianprops=dict(color='white', linewidth=2))  
                 fig.patch.set_facecolor('#2A3B4C')
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7)
                 ax.set_facecolor("#1E2A38")
                 ax.set_title(f'Box Plot of Wert - {location2}', color='white')
                 ax.set_ylabel('Wert', color='white')
@@ -324,8 +326,9 @@ def historical_graph_view(request):
                 mean1 = sum(wert1) / len(wert1) if wert1 else 0
                 mean2 = sum(wert2) / len(wert2) if wert2 else 0
                 fig, ax = plt.subplots()
-                ax.bar([location1, location2], [mean1, mean2], color=['#007BFF', '#FF8800'])
+                ax.bar([location1, location2], [mean1, mean2], color=['#007BFF', '#FF8800'], zorder=3)
                 fig.patch.set_facecolor('#2A3B4C')
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7, zorder=0)
                 ax.set_facecolor("#1E2A38")
                 ax.set_title('Comparison of Mean Values', color='white')
                 ax.set_ylabel('Mean Wert', color='white')
@@ -386,6 +389,7 @@ def historical_graph_view(request):
                     flierprops=dict(marker='o', markerfacecolor='red', markeredgecolor='black', markersize=8),
                     medianprops=dict(color='white', linewidth=2)) 
                 fig.patch.set_facecolor('#2A3B4C')
+                ax.grid(color='#3A4755', linestyle='--', linewidth=0.5, alpha=0.7)
                 ax.set_facecolor("#1E2A38")
                 ax.set_title(f'Box Plot of {location}', color='white')
                 ax.set_ylabel('Wert', color='white')
