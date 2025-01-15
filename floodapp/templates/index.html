@@ -65,11 +65,15 @@
                   <a class="nav-link" href="{% url 'map' %}">View Map</a>
                 </li>
                 {% if user.is_authenticated %}
-                  <li class="nav-item">
+                    <li class="nav-item {% if request.resolver_match.url_name == 'admin_dashboard' %}active{% endif %}">
+                      <a class="nav-link" href="{% url 'task_scheduling_page' %}">Task Schedule</a>
+                    </li>
+                 
+                  <li class="nav-item {% if request.resolver_match.url_name == 'logout' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                   </li>
                 {% else %}
-                  <li class="nav-item">
+                  <li class="nav-item {% if request.resolver_match.url_name == 'login' %}active{% endif %}">
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                   </li>
                 {% endif %}
@@ -144,10 +148,7 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Welcome to our platform! We’re here to help you stay informed about flood levels in real time, making it easier to stay safe and make smart decisions.
             </p>
             <a href="{% url 'about' %}">
               Read More

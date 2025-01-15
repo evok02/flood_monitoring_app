@@ -13,6 +13,8 @@ requests = "*"
 pytest = "*"
 pandas = "*"
 matplotlib = "*"
+matplotlib = "*"
+pandas = "*"
 
 [dev-packages]
 

@@ -25,6 +25,14 @@
                 <option value="all">All Regions</option>
                 <option value="vienna">Vienna</option>
                 <option value="graz">Graz</option>
+                <option value="linz">Linz</option>
+                <option value="salzburg">Salzburg</option>
+                <option value="innsbruck">Innsbruck</option>
+                <option value="klagenfurt">Klagenfurt</option>
+                <option value="stpoelten">St. Pölten</option>
+                <option value="bregenz">Bregenz</option>
+                <option value="eisenstadt">Eisenstadt</option>
+                <option value="krems">Krems</option>
             </select>
             
             <!-- Dropdown for redirecting to map or water level map -->
@@ -38,7 +46,7 @@
         <!-- Map -->
         <div id="map" class="map-container"></div>
         <script>
-            const austriaGeoJsonUrl = "{% static 'js/austria.geojson' %}";
+            const austriaGeoJsonUrl = "{% static 'js/map.geojson' %}";
         </script>
         <script src="{% static 'js/map.js' %}"></script>
     </div>

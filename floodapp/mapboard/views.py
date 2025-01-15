@@ -5,6 +5,8 @@ from django.db.models import Max
 from .models import WaterLevel, Station, Region, EmergencyReport, Station, Measurement
 from .decorators import allowed_users, unauthenticated_user
 import json
+from django.contrib.auth.decorators import login_required
+
 from .models import Event
 from .form import EventForm, DeleteForm, EventUpdateForm, EventSelectForm, GraphParametersForm
 import logging
@@ -111,11 +113,13 @@ def fetch_emergencies_view(request):
         ]
         return JsonResponse(data, safe=False)
 
-#@allowed_users(allowed_roles=['admin'])
+@login_required
+@allowed_users(allowed_roles=['admin'])
 def task_scheduling_page(request):
     events = Event.objects.all()
     return render(request, 'schedule.html', {'events': events})
 
+@allowed_users(allowed_roles=['admin'])
 def add_event(request):
     if request.method == 'POST':
         form = EventForm(request.POST)
@@ -133,7 +137,7 @@ def add_event(request):
         form = EventForm()
     return render(request, 'add_event.html', {'form': form})
 
-
+@allowed_users(allowed_roles=['admin'])
 def event_list(request):
     events = Event.objects.all()
     data = [{
@@ -144,7 +148,7 @@ def event_list(request):
     } for event in events]
     return JsonResponse(data, safe=False)
     
-
+@allowed_users(allowed_roles=['admin'])
 def delete_event(request):
     if request.method == 'POST':
         form = DeleteForm(request.POST)
@@ -162,7 +166,7 @@ def delete_event(request):
     return render(request, 'delete_event.html', {'form': form})
 
 
-
+@allowed_users(allowed_roles=['admin'])
 def update_event(request):
     if request.method == 'POST':
         if 'select_event' in request.POST:

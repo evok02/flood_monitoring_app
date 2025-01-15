@@ -32,12 +32,17 @@
                 <option value="map" {% if request.path == '/map/' %}selected{% endif %}>View Map</option>
                 <option value="waterlevel-map" {% if request.path == '/map/water-map/' %}selected{% endif %}>Water Level Map</option>
             </select>
+            <div class="legend">
+                <label for="map-options">Legend: </label>
+                <div><span class="legend-dot red"></span> Dangerous Flow</div>
+                <div><span class="legend-dot blue"></span> Safe Flow</div>
+            </div>
         </div>
 
         <!-- Map -->
         <div id="map" class="map-container"></div>
         <script>
-            const austriaGeoJsonUrl = "{% static 'js/austria.geojson' %}";
+            const austriaGeoJsonUrl = "{% static 'js/map.geojson' %}";
             const waterLevelGeoJsonUrl = "{% static 'js/simplified_rivers.geojson' %}";
         </script>
         <script src="{% static 'js/water_level_map.js' %}"></script>

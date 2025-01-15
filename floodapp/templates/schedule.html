@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headerContent %}
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    {% load static %}
     <meta charset="utf-8">
     <title>Schedule</title>
     <link rel="stylesheet" href="{% static 'css/schedule.css' %}">
-</head>
-<body>
-    <div id="calendar"></div>
+{% endblock headerContent %}
+{% block pageContent %}
+<div id="calendar"></div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -72,5 +72,6 @@
         <a href="/map/update_event/" class="update-button">Update Events</a>
       </div>
 </div>
-</body>
-</html>
+{% endblock pageContent %}
+
+
