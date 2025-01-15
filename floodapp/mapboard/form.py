@@ -25,3 +25,25 @@ class EventUpdateForm(forms.ModelForm):
 
 class EventSelectForm(forms.Form):
     title = forms.CharField(label='Event Title', max_length=200)
+
+
+class GraphParametersForm(forms.Form):
+    location = forms.CharField(max_length=100)
+    start_date = forms.DateField(
+        widget=forms.DateInput(
+            attrs={
+                'class': 'form-control',
+                'type': 'date'
+            }
+        ),
+        initial='1976-01-23'
+    )
+    end_date = forms.DateField(
+        widget=forms.DateInput(
+            attrs={
+                'class': 'form-control',
+                'type': 'date'
+            }
+        ),
+        initial='2021-12-15'
+    )
